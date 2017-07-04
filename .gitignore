@@ -1,3 +1,6 @@
 test.css
 test.css.map
 .sass-cache/
+index.html
+node_modules/
+package-lock.json
