@@ -17,34 +17,82 @@ html {
 // You can use these mixins directly in a component or module to trigger the font size rules. Alternatively, you can use the classes to add to your HTML to trigger font sizes without needing to edit any Sass files
 @mixin fsize-12 {
     font-size: 12px;
+    line-height: 15px;
 }
 
 @mixin fsize-14 {
     font-size: 14px;
+    line-height: 16px;
 }
 
 @mixin fsize-16 {
     font-size: 16px;
+    line-height: 18px;
 }
 
 @mixin fsize-18 {
     font-size: 18px;
+    line-height: 21px;
 }
 
 @mixin fsize-24 {
-    font-size: 24px;
+    font-size: 18px;
+    line-height: 21px;
+
+    @include breakpoint(tablet-portrait-up) {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    @include breakpoint(tablet-landscape-up) {
+        font-size: 24px;
+        line-height: 28px;
+    }
 }
 
 @mixin fsize-28 {
-    font-size: 28px;
+    font-size: 22px;
+    line-height: 25px;
+
+    @include breakpoint(tablet-portrait-up) {
+        font-size: 26px;
+        line-height: 29px;
+    }
+
+    @include breakpoint(tablet-landscape-up) {
+        font-size: 28px;
+        line-height: 31px;
+    }
 }
 
 @mixin fsize-36 {
-    font-size: 36px;
+    font-size: 22px;
+    line-height: 25px;
+
+    @include breakpoint(tablet-portrait-up) {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    @include breakpoint(tablet-landscape-up) {
+        font-size: 36px;
+        line-height: 40px;
+    }
 }
 
 @mixin fsize-42 {
-    font-size: 42px;
+    font-size: 22px;
+    line-height: 25px;
+
+    @include breakpoint(tablet-portrait-up) {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    @include breakpoint(tablet-landscape-up) {
+        font-size: 42px;
+        line-height: 46px;
+    }
 }
 
 
