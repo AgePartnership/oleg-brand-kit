@@ -145,3 +145,27 @@ html {
         font-weight: $bold;
     }
 }
+
+
+// Font color classes
+.ap-u-fcolour {
+    &--blue {
+        color: $blue;
+    }
+
+    &--dark-blue {
+        color: $blue-6;
+    }
+
+    &--grey {
+        color: $grey;
+    }
+
+    &--dark-grey {
+        color: $grey-4;
+    }
+
+    &--white {
+        color: $white;
+    }
+}
