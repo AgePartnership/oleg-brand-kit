@@ -1,8 +1,31 @@
-// Colour
-$blue: #19558C;
+// Base Colour
+
+// Blue shades
+$blue-6: #0C2A45;
+$blue-5: #123F68;
+$blue-4: #19558C;
+$blue-3: #517FA8;
+$blue-2: #8CAAC5;
+$blue-1: #C5D4E2;
+
+// Red shades
+$red-4: #891722;
+$red-3: #B8202E;
+$red-2: #BF3643;
+$red-1: #DB8F96;
+
+// Grey shades
+$grey-5: #1C1C1C;
+$grey-4: #565656;
+$grey-3: #747474;
+$grey-2: #969696;
+$grey-1: #DCDCDC;
+
+// Core brand colours
+$blue: $blue-4;
 $gold: #CABC0E;
-$red: #B8202E;
-$grey: #747474;
+$red: $red-3;
+$grey: $grey-3;
 
 $white: #fff;
 $black: #000;
