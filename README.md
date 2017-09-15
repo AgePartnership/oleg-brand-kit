@@ -4,15 +4,19 @@ This package contains Sass allowing for consistent distribution of Age Partnersh
 
 This package is distributed through Yarn.
 
-## Install with Yarn
+## Install using npm
 
-First of all, you need to [install Yarn](https://yarnpkg.com/en/docs/install).
+Before you can use npm, you need to [install Node](https://nodejs.org/en/download/).
 
-Once you're up and running, open a terminal window, cd to the root of your project then run:
+Once you've done that, in the root of your project directory, run:
 
-`$ yarn add oleg-brand-kit`
+<pre>
+    <code>
+        npm install oleg-brand-kit
+    </code>
+</pre>
 
-This should drop the contents of this repo into node_modules in the root of your project.
+This will install the starter pack in the 'node_modules' directory located in the root of your project.
 
 ## Importing the Sass into your project
 
