@@ -16,82 +16,82 @@ html {
 // Font size mixins
 // You can use these mixins directly in a component or module to trigger the font size rules. Alternatively, you can use the classes to add to your HTML to trigger font sizes without needing to edit any Sass files
 @mixin fsize-12 {
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 12px !important;
+    line-height: 15px !important;
 }
 
 @mixin fsize-14 {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 14px !important;
+    line-height: 20px !important;
 }
 
 @mixin fsize-16 {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 16px !important;
+    line-height: 24px !important;
 }
 
 @mixin fsize-18 {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 18px !important;
+    line-height: 26px !important;
 }
 
 @mixin fsize-24 {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 18px !important;
+    line-height: 26px !important;
 
     @include breakpoint(tablet-portrait-up) {
-        font-size: 22px;
-        line-height: 25px;
+        font-size: 22px !important;
+        line-height: 25px !important;
     }
 
     @include breakpoint(tablet-landscape-up) {
-        font-size: 24px;
-        line-height: 28px;
+        font-size: 24px !important;
+        line-height: 28px !important;
     }
 }
 
 @mixin fsize-28 {
-    font-size: 22px;
-    line-height: 25px;
+    font-size: 22px !important;
+    line-height: 25px !important;
 
     @include breakpoint(tablet-portrait-up) {
-        font-size: 26px;
-        line-height: 29px;
+        font-size: 26px !important;
+        line-height: 29px !important;
     }
 
     @include breakpoint(tablet-landscape-up) {
-        font-size: 28px;
-        line-height: 31px;
+        font-size: 28px !important;
+        line-height: 31px !important;
     }
 }
 
 @mixin fsize-36 {
-    font-size: 22px;
-    line-height: 25px;
+    font-size: 22px !important;
+    line-height: 25px !important;
 
     @include breakpoint(tablet-portrait-up) {
-        font-size: 30px;
-        line-height: 33px;
+        font-size: 30px !important;
+        line-height: 33px !important;
     }
 
     @include breakpoint(tablet-landscape-up) {
-        font-size: 36px;
-        line-height: 40px;
+        font-size: 36px !important;
+        line-height: 40px !important;
     }
 }
 
 @mixin fsize-42 {
-    font-size: 22px;
-    line-height: 25px;
+    font-size: 22px !important;
+    line-height: 25px !important;
 
     @include breakpoint(tablet-portrait-up) {
-        font-size: 36px;
-        line-height: 40px;
+        font-size: 36px !important;
+        line-height: 40px !important;
     }
 
     @include breakpoint(tablet-landscape-up) {
-        font-size: 42px;
-        line-height: 46px;
+        font-size: 42px !important;
+        line-height: 46px !important;
     }
 }
 
