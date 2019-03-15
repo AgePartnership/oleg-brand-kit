@@ -6,11 +6,14 @@ install:
 script:
 - npm run sass-lint
 - npm run build
+cache:
+  directories:
+  - $HOME/.npm
 git:
   depth: 5
 notifications:
   slack:
     rooms:
       - secure: IWfzllOgiwhSTFRzxVypoB3Ww/H3yu6gNjcgAvuC45Rk+m/rRI3kxSsyjaDdhE9sbOv7qZbaVBHM4+zP+H/reVpehlAnDaBcGha+VgXt9nehPHOKRIOTy2j0T9LfHEyIC5dLV8YcQ5L0l/mPg0XRRavzOyeC41r/sQw0yEn8GS0TyYHDoqLn6R0SxfgMlK1/4chdGtL3edl3VwZw38K2Q/SB9iD471Pz1ASreq8KGSCCIyf7iIap8OoepXZx5B5og6dYjhzjplKWAV3FvBiWMueolu+cpZ9793ng1KTKvc/Qb9Jz0MlIoOs8IeJV6+1g2NVNLP35SsgO1ajAJzribeI68ZETBaqhDqi5GzWMc1/wkVxi4hfJqP5Egr+C5/pA7EeaVDqZD/q9HlmM1kNLNG5G0Qqdo24IpIfkd9mcAK/xJC+dQpe1svazvyF/FARqEHIsx4TyBcFlJRhxx5gveoBYS4VstR6b903US4ySFf8Git+glCkAkWKXFWoYehyL2q2nZTHJG1KJPLbqtrzOh6Gdg5H9Ew8IS3W64URXNCYHqWODBOotMtAjIq4FmABSCE7HOlEFFEnEAtcr+WRshIG0+SOiD02atYVvDpUXDpns7YklHY11DBIx49datJ486ILPLaw+Q3Mr74a8fEF1YqeVEoEc7o7wdPUREmhxgrs=
-    on_success: change
+    on_success: always
     on_failure: always
