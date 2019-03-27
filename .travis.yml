@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- stable
+install:
+- npm install
+script:
+- npm run sass-lint
+- npm run build
+cache:
+  directories:
+  - $HOME/.npm
+git:
+  depth: 5
+notifications:
+  slack:
+    rooms:
+      - secure: bZoZBQwhG1majZTHPvczpOiVOuKMoFu6VPaXd/cuMnTsTjatr2pWa7NexIruoMxZBxwtLeuEIJk19HLH0wXSzhti7G7M27sJBvwkUthdcAGdsZ1P//sS/+xiKoM5RgUJmkAlmsndovkuZ9wrq3BkpOXhVBKEchZcZQypdPThlwE=
+    on_success: change
+    on_failure: always
