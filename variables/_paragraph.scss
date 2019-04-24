@@ -1,3 +1,25 @@
-.c-paragraph {
-    @extend .ap-c-p ;
-}
+$paragraph-colour: $grey-5;
+$paragraph-font-size: 16px;
+$paragraph-font-weight: $regular;
+$paragraph-line-height: 24px;
+$paragraph-margin-top: null;
+$paragraph-margin-right: null;
+$paragraph-margin-bottom: $space;
+$paragraph-margin-left: null;
+$paragraph-padding: 0;
+$paragraph-text-align: null;
+
+$paragraph-highlighted-color: null;
+$paragraph-highlighted-font-size: null;
+$paragraph-highlighted-font-weight: null;
+$paragraph-highlighted-line-height: null;
+$paragraph-highlighted-margin: null;
+
+$paragraph-step-3-color: null;
+$paragraph-step-3-font-size: null;
+$paragraph-step-3-font-weight: null;
+$paragraph-step-3-line-height: null;
+$paragraph-step-3-margin: null;
+
+$paragraph-font-size--mobile: null;
+$paragraph-highlighted-margin--mobile: null;
