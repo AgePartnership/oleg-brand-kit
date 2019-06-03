@@ -15,6 +15,6 @@
   },
   "devDependencies": {
     "node-sass": "^4.11.0",
-    "sass-lint": "^1.12.1"
+    "sass-lint": "^1.13.1"
   }
 }
