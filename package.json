@@ -11,9 +11,7 @@
   "author": "Sam Hardacre <me@nocturnalmonkey.com>",
   "license": "MIT",
   "dependencies": {
-    "node": "^12.4.0",
-    "oleg-starter-pack": "^1.0.3",
-    "sass": "^1.21.0"
+    "oleg-starter-pack": "^1.0.3"
   },
   "devDependencies": {
     "node-sass": "^4.12.0",
