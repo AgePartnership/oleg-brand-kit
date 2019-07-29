@@ -20,11 +20,23 @@ This will install the starter pack in the 'node_modules' directory located in th
 
 ## Importing the Sass into your project
 
-### Include all the things!
+### Include the config variables!
 
-If you want to include everything in this repo, there's a handy single file you need to import into your main project Sass file:
+If you want to include all the config variables from this repo, there's a handy single file you need to import into your main project Sass file:
 
-`@import 'node_modules/oleg-brand-kit/all';`
+`@import 'node_modules/oleg-brand-kit/config';`
+
+### Include the utility classes!
+
+If you want to include the utility classes from this repo, you can import the following into your main project Sass file:
+
+`@import 'node_modules/oleg-brand-kit/utilities';`
+
+This file contains classes which you can use to amend properties of an element, including font-weight, font-size and colour.
+
+This file must be the last imported partial in your Sass file. Generally, classes added here hold the same CSS specificity value as classes used in module/component partials. In such cases, CSS will read the most 'recent' declaration. By importing the utilities partial after every other import, it ensures the utility classes are set as intended.
+
+For more information regarding CSS specificity, see: https://css-tricks.com/specifics-on-css-specificity/.
 
 ### Pick 'n' Mix
 
