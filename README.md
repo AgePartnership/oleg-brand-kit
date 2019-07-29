@@ -34,7 +34,7 @@ If you want to include the utility classes from this repo, you can import the fo
 
 This file contains classes which you can use to amend properties of an element, including font-weight, font-size and colour.
 
-This file must be the last imported partial in your Sass file. Generally, classes added here hold the same CSS specificity value as classes used in module/component partials. In such cases, CSS will read the most 'recent' declaration. By importing the utilities partial after every other import, it ensures the utility classes are set as intended.
+This file must be the last imported partial in your Sass file. Generally, classes added here hold the same CSS specificity value as classes used in module/component partials. In such cases, CSS will read the most 'recent' declaration. By importing the utilities partial after every other import, it ensures the utility classes work as intended.
 
 For more information regarding CSS specificity, see: https://css-tricks.com/specifics-on-css-specificity/.
 
