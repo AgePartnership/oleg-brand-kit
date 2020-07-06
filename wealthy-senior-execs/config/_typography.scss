@@ -1,0 +1,22 @@
+$primary-font: 'Cambria', 'Hoefler Text', 'Liberation Serif', 'Times', 'Times New Roman', serif;
+$secondary-font: 'Gotham', Helvetica, Arial, sans-serif;
+
+sup {
+    font-size: smaller;
+    vertical-align: super;
+}
+
+@mixin fsize-14 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@mixin fsize-16 {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+@mixin fsize-24 {
+    font-size: 24px;
+    line-height: 29px;
+}
