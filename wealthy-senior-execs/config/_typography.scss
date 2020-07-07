@@ -1,6 +1,10 @@
 $primary-font: cambria, 'hoefler text', 'liberation serif', times, 'times new roman', serif;
 $secondary-font: gotham, helvetica, arial, sans-serif;
 
+html {
+    font-family: $primary-font;
+}
+
 sup {
     font-size: smaller;
     vertical-align: super;
