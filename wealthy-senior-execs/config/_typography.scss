@@ -1,5 +1,12 @@
-$primary-font: cambria, 'hoefler text', 'liberation serif', times, 'times new roman', serif;
-$secondary-font: gotham, helvetica, arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,700&display=swap');
+
+$primary-font: Roboto, Helvetica, Arial, sans-serif;
+$secondary-font: Vollkorn, 'Liberation Serif', Times, 'Times New Roman', serif;
+
+// Base font weights
+$regular: 400;
+$bold: 700;
 
 html {
     font-family: $primary-font;
