@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,700&display=swap');
+
+$primary-font: Roboto, Helvetica, Arial, sans-serif;
+$secondary-font: Vollkorn, 'Liberation Serif', Times, 'Times New Roman', serif;
+
+// Base font weights
+$regular: 400;
+$bold: 700;
+
+html {
+    font-family: $primary-font;
+}
+
+sup {
+    font-size: smaller;
+    vertical-align: super;
+}
+
+@mixin fsize-14 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@mixin fsize-16 {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+@mixin fsize-20 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+@mixin fsize-24 {
+    font-size: 24px;
+    line-height: 29px;
+}
