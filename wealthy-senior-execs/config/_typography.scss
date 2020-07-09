@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:500,700&display=swap');
 
 $primary-font: Roboto, Helvetica, Arial, sans-serif;
 $secondary-font: Vollkorn, 'Liberation Serif', Times, 'Times New Roman', serif;
@@ -16,6 +16,11 @@ html {
 sup {
     font-size: smaller;
     vertical-align: super;
+}
+
+@mixin secondary-font {
+    font-family: $secondary-font;
+    font-weight: $medium;
 }
 
 @mixin fsize-14 {
