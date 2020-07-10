@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,500;0,700;1,500;1,700&display=swap');
 
-$primary-font: Roboto, Helvetica, Arial, sans-serif;
-$secondary-font: Vollkorn, 'Liberation Serif', Times, 'Times New Roman', serif;
+$primary-font: Roboto, 'Helvetica Neue', Gotham, Helvetica, Arial, sans-serif;
+$secondary-font: Vollkorn, Cambria, 'Hoefler text', 'Liberation Serif', Times, 'Times New Roman', serif;
 
 // Base font weights
 $regular: 400;
+$medium: 500;
 $bold: 700;
 
 html {
@@ -15,6 +16,11 @@ html {
 sup {
     font-size: smaller;
     vertical-align: super;
+}
+
+@mixin secondary-font {
+    font-family: $secondary-font;
+    font-weight: $medium;
 }
 
 @mixin fsize-14 {
