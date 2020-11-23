@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap'); // sass-lint:disable-line no-url-domains no-url-protocols
+
+// Base font stack
+$font: 'Open Sans', Helvetica, Arial, 'Liberation Sans', sans-serif;
+
+// Base font weights
+$light: 300;
+$regular: 400;
+$semi-bold: 600;
+$bold: 700;
+
+// Initialise font use on the html element
+html {
+    font-family: $font;
+}
+
+// Reset sup styles to override the reset in oleg-starter-pack
+sup {
+    font-size: smaller;
+    vertical-align: super;
+}
+
+// Font size mixins
+// You can use these mixins directly in a component or module to trigger the font size rules. Alternatively, you can use the classes to add to your HTML to trigger font sizes without needing to edit any Sass files
+@mixin fsize-12 {
+    font-size: 12px !important;
+    line-height: 15px !important;
+}
+
+@mixin fsize-16 {
+    font-size: 16px !important;
+    line-height: 24px !important;
+}
+
+@mixin fsize-18 {
+    font-size: 18px !important;
+    line-height: 26px !important;
+}
