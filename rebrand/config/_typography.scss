@@ -24,15 +24,47 @@ sup {
 // You can use these mixins directly in a component or module to trigger the font size rules. Alternatively, you can use the classes to add to your HTML to trigger font sizes without needing to edit any Sass files
 @mixin fsize-12 {
     font-size: 12px !important;
-    line-height: 15px !important;
+    line-height: 16px !important;
+}
+
+@mixin fsize-14 {
+    font-size: 14px !important;
+    letter-spacing: 0.02em;
+    line-height: 18px !important;
 }
 
 @mixin fsize-16 {
     font-size: 16px !important;
-    line-height: 24px !important;
+    letter-spacing: 0.02em;
+    line-height: 20px !important;
 }
 
 @mixin fsize-18 {
     font-size: 18px !important;
-    line-height: 26px !important;
+    letter-spacing: 0.02em;
+    line-height: 22px !important;
+}
+
+@mixin fsize-20 {
+    font-size: 20px !important;
+    letter-spacing: 0.02em;
+    line-height: 24px !important;
+}
+
+@mixin fsize-28 {
+    font-size: 28px !important;
+    letter-spacing: 0.02em;
+    line-height: 32px !important;
+}
+
+@mixin fsize-32 {
+    font-size: 32px !important;
+    letter-spacing: 0.02em;
+    line-height: 36px !important;
+}
+
+@mixin fsize-36 {
+    font-size: 36px !important;
+    letter-spacing: 0.02em;
+    line-height: 42px !important;
 }
