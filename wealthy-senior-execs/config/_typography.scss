@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Vollkorn:500,500italic,700,700italic&display=swap');
 
-$primary-font: Roboto, 'Helvetica Neue', Gotham, Helvetica, Arial, sans-serif;
-$secondary-font: Vollkorn, Cambria, 'Hoefler text', 'Liberation Serif', Times, 'Times New Roman', serif;
+$primary-font: "Roboto, 'Helvetica Neue', Gotham, Helvetica, Arial, sans-serif";
+$secondary-font: "Vollkorn, Cambria, 'Hoefler text', 'Liberation Serif', Times, 'Times New Roman', serif";
 
 // Base font weights
 $regular: 400;
@@ -10,7 +10,7 @@ $medium: 500;
 $bold: 700;
 
 html {
-    font-family: $primary-font;
+    font-family: unquote($primary-font);
 }
 
 sup {
@@ -19,7 +19,7 @@ sup {
 }
 
 @mixin secondary-font {
-    font-family: $secondary-font;
+    font-family: unquote($secondary-font);
     font-weight: $medium;
 }
 
