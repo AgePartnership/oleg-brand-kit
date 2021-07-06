@@ -4,17 +4,18 @@
     "description": "A place to store global brand information for use across various digital properties (Sass colour variables, typography etc)",
     "main": "index.js",
     "scripts": {
-        "sass-lint": "sass-lint -c .sass-lint.yml --max-warnings 0 -q -v",
+        "sass-lint": "stylelint --rd --rdd \"**/*.{css,scss,sass}\" -s scss",
         "build": "node-sass --output-style compressed test.scss test.css"
     },
     "repository": "git@github.com:AgePartnership/oleg-brand-kit.git",
     "author": "Sam Hardacre <me@nocturnalmonkey.com>",
     "license": "MIT",
     "dependencies": {
-        "oleg-starter-pack": "^1.0.3"
+        "ap-stylelint-config": "github:agepartnership/ap-stylelint-config",
+        "oleg-starter-pack": "^1.0.3",
+        "stylelint": "^13.13.1",
+        "stylelint-order": "^4.1.0",
+        "stylelint-scss": "^3.19.0"
     },
-    "devDependencies": {
-        "node-sass": "^6.0.0",
-        "sass-lint": "^1.13.1"
-    }
+    "devDependencies": {}
 }
