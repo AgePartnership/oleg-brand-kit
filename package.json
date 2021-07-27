@@ -4,7 +4,7 @@
     "description": "A place to store global brand information for use across various digital properties (Sass colour variables, typography etc)",
     "main": "index.js",
     "scripts": {
-        "sass-lint": "stylelint --rd --rdd \"**/*.{css,scss,sass}\" -s scss",
+        "stylelint": "stylelint --rd --rdd \"**/*.{css,scss,sass}\" -s scss",
         "build": "node-sass --output-style compressed test.scss test.css"
     },
     "repository": "git@github.com:AgePartnership/oleg-brand-kit.git",
