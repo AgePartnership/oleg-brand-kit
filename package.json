@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "stylelint": "stylelint --rd --rdd \"**/*.{css,scss,sass}\" -s scss",
+        "stylelint-fix": "stylelint --rd --rdd \"**/*.{css,scss,sass}\" -s scss --fix",
         "build": "node-sass --output-style compressed test.scss test.css"
     },
     "repository": "git@github.com:AgePartnership/oleg-brand-kit.git",
