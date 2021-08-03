@@ -44,4 +44,17 @@ You can include files individually allowing you to customise what is available t
 
 `@import 'node_modules/oleg-brand-kit/config.colour';`
 
+## Stylelint - linting your code
+
+Whenever you make a change to a .scss file you should run the scss linter to check it follows our standards and conventions. The scripts are listed in `package.json` under scripts.
+
+To run stylelint itself (this will just show you any errors) run the following command:
+
+`npm run stylelint`
+
+To run stylelint and then get it to fix the errors:
+
+`npm run stylelint-fix`
+
+
 That's pretty much it. Now, go make a brew.
