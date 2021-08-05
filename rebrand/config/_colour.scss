@@ -1,17 +1,40 @@
-// Core brand colours
-$blue: #1F3B70;
-$light-blue: #206BA2;
-$dark-blue: #090E31;
-
-$red: #DC320E;
-$dark-red: #BB2F0F;
-
-$gold: #BDBD1F;
-
-$pale-yellow: #F6F6D7;
-
-$grey: #333333;
-$light-grey: #EFEDE9;
-
-$white: #fff;
+$white: #FFF;
 $black: #000;
+
+$blue-1: #D8E2EF;
+$blue-2: #A5C4D9;
+$blue-3: #77A7C7;
+$blue-4: #206BA2;
+$blue-5: #213B70;
+$blue-6: #090E31;
+
+$gold-1: #F7F7DF;
+$gold-2: #BDBD1F;
+
+$red-1: #F8D6CF;
+$red-2: #F1AD9F;
+$red-3: #E35B3E;
+$red-4: #DC320E;
+$red-5: #AC2B0E;
+$red-6: #832B0E;
+
+$grey-1: #EFEDE9;
+$grey-2: #D7D3CE;
+$grey-3: #B3B3B3;
+$grey-4: #838383;
+$grey-5: #5C5C5C;
+$grey-6: #333333;
+
+// Core brand colours
+$blue: $blue-5;
+$light-blue: $blue-4;
+$dark-blue: $blue-6;
+
+$red: $red-4;
+$dark-red: $red-5;
+
+$gold: $gold-2;
+$light-gold: $gold-1; // The new "pale yellow"?
+
+$grey: $grey-6;
+$light-grey: $grey-1;
