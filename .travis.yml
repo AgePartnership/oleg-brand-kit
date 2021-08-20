@@ -14,6 +14,6 @@ git:
 notifications:
   slack:
     rooms:
-      - secure: bZoZBQwhG1majZTHPvczpOiVOuKMoFu6VPaXd/cuMnTsTjatr2pWa7NexIruoMxZBxwtLeuEIJk19HLH0wXSzhti7G7M27sJBvwkUthdcAGdsZ1P//sS/+xiKoM5RgUJmkAlmsndovkuZ9wrq3BkpOXhVBKEchZcZQypdPThlwE=
+      - secure: oRySMYt52aL58RDK6+C8puskNtL63/1Dtlfmj8SMIU5W3jvOC1qeHEv8Q0W5C4V/9Hhz5EJ9BDW6lC+Rx5JHwr1cBL4QksteIPY+Gg8BeW9LZOgGHVhjOd7JjDZO4Qvv/LozOQeoc8Vv4K6d+hzwYOIdbCWu7EYDcdzBJmdgRx45vozkcBhp4LH3IU7yA0pYgIc/5Rpcx6hp+D3zshsO/aI8JeUq38hg31IgpSSwKrd++EQy0H/m0pRcSfB4Zgb8HHpjJ9wkniT5YABF8UJtI2KxP+/1FZ0qTPWj1pz7oioREMeKHQseOesJ3fgt9w2Ha4uGP3+wz69Yb8PsGywZefsP9PHuBH0GF+ICrYxPldVLzTV6JWMUa0UTl2Guy++0bFVjnYuy4T4w3riR+rBEsgfc90bn/076/JRvJjKV+AhYtH/rTZJT+GkU3Gan0O0TlFJW7qTSEq29KKhTk5uXHlqbBg2tlt41E9Ve+fp0BCSk7saqHqsmgfuU4OphrtZB27SWRZpnRHhU219OYLBca3RLZ8wODKOl1E0M2K5L/8SUzMEIfnpLUBoViNwMHEYatuMj/hKgQshx9yTU+xN30u+5eDYG9GZp2a0DgetMXgr5ZQYhGUZE6ZQYneTk7END/h/Ks5KM+FWZ1yZmeFX01eHjFBKgbyddn8n18ROqoL4=
     on_success: change
     on_failure: always
