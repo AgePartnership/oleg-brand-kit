@@ -1,10 +1,11 @@
 {
     "name": "oleg-brand-kit",
-    "version": "2.1.4",
+    "version": "2.2.0",
     "description": "A place to store global brand information for use across various digital properties (Sass colour variables, typography etc)",
     "main": "index.js",
     "scripts": {
-        "sass-lint": "sass-lint -c .sass-lint.yml --max-warnings 0 -q -v",
+        "stylelint": "stylelint --rd --rdd \"**/*.{css,scss,sass}\" -s scss",
+        "stylelint-fix": "stylelint --rd --rdd \"**/*.{css,scss,sass}\" -s scss --fix",
         "build": "node-sass --output-style compressed test.scss test.css"
     },
     "repository": "git@github.com:AgePartnership/oleg-brand-kit.git",
@@ -14,7 +15,7 @@
         "oleg-starter-pack": "^1.0.3"
     },
     "devDependencies": {
-        "node-sass": "^4.14.1",
-        "sass-lint": "^1.13.1"
+        "ap-stylelint-config": "github:agepartnership/ap-stylelint-config",
+        "node-sass": "^6.0.0"
     }
 }

@@ -1,0 +1,6 @@
+extends: ap-stylelint-config
+
+ignoreFiles:
+  - "**/*.yaml"
+  - "**/*.yml"
+  - "**/*.css"
