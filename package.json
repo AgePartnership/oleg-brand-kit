@@ -2,7 +2,10 @@
     "name": "oleg-brand-kit",
     "version": "2.2.0",
     "description": "A place to store global brand information for use across various digital properties (Sass colour variables, typography etc)",
+    "license": "MIT",
+    "author": "Sam Hardacre <me@nocturnalmonkey.com>",
     "main": "index.js",
+    "repository": "git@github.com:AgePartnership/oleg-brand-kit.git",
     "scripts": {
         "preversion": "git checkout develop",
         "postversion": "git push --tags origin develop && git checkout master && git pull --tags origin develop && git push --tags origin master && git checkout develop",
@@ -10,9 +13,6 @@
         "stylelint-fix": "stylelint --rd --rdd \"**/*.{css,scss,sass}\" -s scss --fix",
         "build": "node-sass --output-style compressed test.scss test.css"
     },
-    "repository": "git@github.com:AgePartnership/oleg-brand-kit.git",
-    "author": "Sam Hardacre <me@nocturnalmonkey.com>",
-    "license": "MIT",
     "dependencies": {
         "oleg-starter-pack": "^1.0.3"
     },
