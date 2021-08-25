@@ -4,6 +4,8 @@
     "description": "A place to store global brand information for use across various digital properties (Sass colour variables, typography etc)",
     "main": "index.js",
     "scripts": {
+        "preversion": "git checkout develop",
+        "postversion": "git push --tags origin develop && git checkout master && git pull --tags origin develop && git push --tags origin master && git checkout develop",
         "stylelint": "stylelint --rd --rdd \"**/*.{css,scss,sass}\" -s scss",
         "stylelint-fix": "stylelint --rd --rdd \"**/*.{css,scss,sass}\" -s scss --fix",
         "build": "node-sass --output-style compressed test.scss test.css"
