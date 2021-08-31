@@ -18,11 +18,17 @@ sup {
     vertical-align: super;
 }
 
+// Font family mixins
+@mixin primary-font {
+    font-family: unquote($primary-font);
+}
+
 @mixin secondary-font {
     font-family: unquote($secondary-font);
     font-weight: $medium;
 }
 
+// Font size mixins
 @mixin fsize-14 {
     font-size: 14px;
     line-height: 20px;
