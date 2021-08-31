@@ -20,6 +20,11 @@ sup {
     vertical-align: super;
 }
 
+// Font family mixins
+@mixin font {
+    font-family: unquote($font);
+}
+
 // Font size mixins
 // You can use these mixins directly in a component or module to trigger the font size rules. Alternatively, you can use the classes to add to your HTML to trigger font sizes without needing to edit any Sass files
 @mixin fsize-12 {
