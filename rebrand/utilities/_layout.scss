@@ -74,7 +74,7 @@ $group-list: (1: 'a', 2: 'b', 3: 'c', 4: 'd');
     &__area {
         @for $groups from 1 through 4 {
             @for $rows from 1 through 3 {
-                &--#{map-get($group-count, $groups)}-#{$rows} {
+                &--#{map-get($group-list, $groups)}-#{$rows} {
                     grid-area: #{map-get($group-list, $groups)}-$rows;
                 }
             }
