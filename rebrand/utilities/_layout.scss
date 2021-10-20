@@ -55,7 +55,7 @@ $group-list: (1: 'a', 2: 'b', 3: 'c', 4: 'd');
     // 4 groups (a-d)
     // 2 columns (For grid-template-columns and grid-template-areas)
     // 1 row within each group (a-1, b-1)
-    &--4x2x2 {
+    &--4x2x1 {
         grid-template-areas:
             'a-1'
             'b-1'
