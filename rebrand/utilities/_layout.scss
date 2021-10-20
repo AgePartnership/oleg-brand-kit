@@ -1,7 +1,7 @@
 $group-list: (1: 'a', 2: 'b', 3: 'c', 4: 'd');
 
 /* stylelint-disable declaration-colon-space-after -- Better grid-template-area readability */
-.grid {
+.ap-u-grid {
     // 4 groups (a-d)
     // 2 columns (For grid-template-columns and grid-template-areas)
     // 3 rows within each group (a-1, a-2, a-3)
