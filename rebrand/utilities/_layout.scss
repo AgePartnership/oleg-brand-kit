@@ -39,8 +39,8 @@ $group-list: (1: 'a', 2: 'b', 3: 'c', 4: 'd');
     &--2x2x2 {
         grid-template-areas:
             'a-1'
-            'b-1'
             'a-2'
+            'b-1'
             'b-2';
         grid-template-columns: repeat(1, 1fr);
 
