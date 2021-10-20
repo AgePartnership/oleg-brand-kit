@@ -1,4 +1,4 @@
-$groups: (1: 'a', 2: 'b', 3: 'c', 4: 'd');
+$group-list: (1: 'a', 2: 'b', 3: 'c', 4: 'd');
 
 /* stylelint-disable declaration-colon-space-after -- Better grid-template-area readability */
 .grid {
@@ -74,11 +74,10 @@ $groups: (1: 'a', 2: 'b', 3: 'c', 4: 'd');
     &__area {
         @for $groups from 1 through 4 {
             @for $rows from 1 through 3 {
-                &--#{map.get($groups, $groups)}-#{$rows} {
-                    grid-area: #{map.get($groups, $groups)}-$rows;
+                &--#{map-get($group-count, $groups)}-#{$rows} {
+                    grid-area: #{map-get($group-list, $groups)}-$rows;
                 }
             }
         }
     }
 };
-
