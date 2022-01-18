@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400italic,500,500italic,700,700italic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic&display=swap');
+
+$primary-font: 'EB Garamond', Cambria, 'Hoefler text', 'Liberation Serif', Times, 'Times New Roman', serif;
+$secondary-font: Roboto, 'Helvetica Neue', Gotham, Helvetica, Arial, sans-serif;
+
+// Base font weights
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+html {
+    font-family: $primary-font;
+}
+
+sup {
+    font-size: smaller;
+    vertical-align: super;
+}
+
+@mixin secondary-font {
+    font-family: $secondary-font;
+    font-weight: $regular;
+}
+
+/* TODO: Confirm font sizes */
+@mixin fsize-14 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@mixin fsize-16 {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+@mixin fsize-20 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+@mixin fsize-24 {
+    font-size: 24px;
+    line-height: 29px;
+}
