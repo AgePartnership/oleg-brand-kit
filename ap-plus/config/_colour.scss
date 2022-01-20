@@ -1,17 +1,17 @@
 // Black
-$black: #221f20; // H1 colour, colour of input and content-box borders
+$black: #000;
 
-$black-other: #000; // H2 colour
 // White
 $white: #fff;
 
-// Plum
-$plum: #9d013b;
-$plum-light: #c9004a;
-$plum-dark: #630024;
+// Red
+$red: #b8202e; // APW $red (used for error styles)
 
-$red: #bf0e39; // For errors
+// Maroon
+$maroon: #9d013b;
+$maroon-light: #bf3643; // AP $red-2 (For hover styles) - TODO... Fix - these are definitely not maroon!
+$maroon-dark: #891722; // AP $red-4 (For focus styles) - TODO... Fix - these are definitely not maroon!
 
-$grey: #3e3e3f; // Body colour
-$grey-light: #edeceb; // Body background
-$grey-where: #d1d2d4; // Divider
+$grey: #3e3e3f; // TODO: Confirm (Taken from designs)
+$grey-light: #f7f3f2;
+$grey-dark: #1c1c1c;
