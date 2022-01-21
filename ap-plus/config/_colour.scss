@@ -1,16 +1,16 @@
 // Black
-$black: #000;
+$black: #1d1d1b;
 
 // White
 $white: #fff;
 
-// Red
-$red: #b8202e; // APW $red (used for error styles)
-
 // Maroon
-$maroon: #a91c50;
-$maroon-light: #d1919d;
-$maroon-dark: #891722; // AP $red-4 (For focus styles) - TODO... Confirm a darker maroon shade
+$maroon-4: #a91c50;
+$maroon-3: #d1919d;
+$maroon-2: #e7c9ce;
+$maroon-1: #f5e9eb;
+$maroon: $maroon-4;
 
+// Grey
 $grey: #f2f1f1;
 $grey-warm: #f7f3f2;
