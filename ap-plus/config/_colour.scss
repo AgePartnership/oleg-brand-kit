@@ -5,10 +5,12 @@ $black: #1d1d1b;
 $white: #fff;
 
 // Maroon
-$maroon-4: #a91c50;
-$maroon-3: #d1919d;
-$maroon-2: #e7c9ce;
 $maroon-1: #f5e9eb;
+$maroon-2: #e7c9ce;
+$maroon-3: #d1919d;
+$maroon-4: #a91c50;
+$maroon-5: darken($maroon-4, 10);
+
 $maroon: $maroon-4;
 
 // Grey
