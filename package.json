@@ -14,7 +14,7 @@
         "build": "node-sass --output-style compressed test.scss test.css"
     },
     "dependencies": {
-        "oleg-starter-pack": "^2.3.3"
+        "oleg-starter-pack": "git+ssh://git@github.com/AgePartnership/oleg-starter-pack.git#feature/utilities"
     },
     "devDependencies": {
         "ap-stylelint-config": "github:agepartnership/ap-stylelint-config",

@@ -1,0 +1,83 @@
+$group-list: (1: 'a', 2: 'b', 3: 'c', 4: 'd');
+
+/* stylelint-disable declaration-colon-space-after -- Better grid-template-area readability */
+.ap-u-grid {
+    // 4 groups (a-d)
+    // 2 columns (For grid-template-columns and grid-template-areas)
+    // 3 rows within each group (a-1, a-2, a-3)
+    &--4x2x3 {
+        grid-template-areas:
+            'a-1'
+            'a-2'
+            'a-3'
+            'b-1'
+            'b-2'
+            'b-3'
+            'c-1'
+            'c-2'
+            'c-3'
+            'd-1'
+            'd-2'
+            'd-3';
+        grid-template-columns: repeat(1, 1fr);
+
+        @include breakpoint(tablet-landscape-up) {
+            grid-template-areas:
+                'a-1 b-1'
+                'a-2 b-2'
+                'a-3 b-3'
+                'c-1 d-1'
+                'c-2 d-2'
+                'c-3 d-3';
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    // 2 groups (a-b)
+    // 2 columns (For grid-template-columns and grid-template-areas)
+    // 2 rows within each group (a-1, a-2)
+    &--2x2x2 {
+        grid-template-areas:
+            'a-1'
+            'a-2'
+            'b-1'
+            'b-2';
+        grid-template-columns: repeat(1, 1fr);
+
+        @include breakpoint(tablet-landscape-up) {
+            grid-template-areas:
+                'a-1 b-1'
+                'a-2 b-2';
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    // 4 groups (a-d)
+    // 2 columns (For grid-template-columns and grid-template-areas)
+    // 1 row within each group (a-1, b-1)
+    &--4x2x1 {
+        grid-template-areas:
+            'a-1'
+            'b-1'
+            'c-1'
+            'd-1';
+        grid-template-columns: repeat(1, 1fr);
+
+        @include breakpoint(tablet-landscape-up) {
+            grid-template-areas:
+                'a-1 b-1'
+                'c-1 d-1';
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__area {
+        @for $groups from 1 through 4 {
+            @for $rows from 1 through 3 {
+                &--#{map-get($group-list, $groups)}-#{$rows} {
+                    grid-area: #{map-get($group-list, $groups)}-$rows;
+                }
+            }
+        }
+    }
+};
