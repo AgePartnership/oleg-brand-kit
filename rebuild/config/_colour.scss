@@ -3,6 +3,7 @@ $blue-40: #B3B1C2;
 $blue-60: #7D7B97;
 $blue-80: #515277;
 $blue-100: #243060;
+$blue-dark: #202b56;
 
 $purple-5: #FAF2F7;
 $purple-20: #E7D4DC;
@@ -10,6 +11,7 @@ $purple-40: #DBBECB;
 $purple-60: #C389A3;
 $purple-80: #AD5B85;
 $purple-100: #9C0067;
+$purple-dark: #850058;
 
 $grey: #242424;
 $light-grey: #CCCCCC;
@@ -22,6 +24,7 @@ $primary-colour--tint: $blue-20;
 $primary-colour--light: $blue-40;
 $primary-colour--medium: $blue-60;
 $primary-colour--deep: $blue-80;
+$primary-colour--dark: $blue-dark;
 
 $secondary-colour: $purple-5;
 $secondary-colour--darken: darken($secondary,10%);
@@ -30,6 +33,7 @@ $secondary-colour--tint: $purple-5;
 $secondary-colour--light: $purple-40;
 $secondary-colour--medium: $purple-60;
 $secondary-colour--deep: $purple-80;
+$secondary-colour--dark: $purple-dark;
 
 $text-colour: $grey;
 
