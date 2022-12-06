@@ -2,7 +2,7 @@
 
 // Base font stack
 $font--primary: 'Open Sans', Helvetica, Arial, 'Liberation Sans', sans-serif;
-$font--secondary: 'Le Monde Courrier Std', "Century Schoolbook", serif;
+$font--secondary: 'Le Monde Courrier Std', 'Century Schoolbook', serif;
 
 // Base font weights
 $light: 300;
@@ -14,7 +14,7 @@ $bold: 700;
 html {
     font-family: $font--primary;
     font-size: $base-unit * 2;
-    line-height: 120%
+    line-height: 120%;
 }
 
 // Reset sup styles to override the reset in oleg-starter-pack
