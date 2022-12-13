@@ -10,7 +10,6 @@
         "node": ">=12.13.0"
     },
     "scripts": {
-        "preinstall": "node --version | grep -E '^v12' || (echo 'use Node Version 12 (Erbium): `nvm use lts/erbium`' && exit 1)",
         "preversion": "git checkout develop",
         "postversion": "git push --tags origin develop && git checkout master && git pull --tags origin develop && git push --tags origin master && git checkout develop",
         "stylelint": "stylelint --rd --rdd \"**/*.{css,scss,sass}\" -s scss",
