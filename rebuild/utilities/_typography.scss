@@ -1,0 +1,22 @@
+// Font color classes
+.ap-u-fcolour {
+    &--primary {
+        color: $primary-colour;
+    }
+
+    &--primary-dark {
+        color: $primary-colour--dark;
+    }
+
+    &--text-colour {
+        color: $text-colour;
+    }
+
+    &--white {
+        color: $white;
+    }
+
+    &--secondary-colour {
+        color: $secondary-colour;
+    }
+}
