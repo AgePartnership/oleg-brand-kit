@@ -117,9 +117,8 @@
     @mixin icon-markup($asset-url, $mask-enable: false) {
         @if $mask-enable == true {
             mask-position: center;
-            mask-position: center;
             mask-repeat: no-repeat;
-            mask-size: auto auto;
+            mask-size: contain;
             mask-image: url(#{$asset-url});
 
         } @else {
