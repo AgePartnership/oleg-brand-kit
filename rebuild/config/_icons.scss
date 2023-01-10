@@ -4,54 +4,48 @@
     //Icon sizes
     $icon-sizes: ("tiny": 16px, "small": 24px, "medium": 32px, "ui": 40px, "large": 88px, "maxi": 152px);
 
-    //Colours for icons - used on image masks
-    $icon-colour: ("primary": $primary-colour, "primary-medium": $primary-colour--medium, "secondary": $secondary-colour, "white": $white);
-    
     //Icons and their file locations
     $icons: (
-        "hamburger": (
+        "hamburger--primary": (
             "asset": "rebuild/icons/hamburger--primary.svg",
         ),
-        "hamburger-close": (
+        "hamburger-close--primary": (
             "asset": "rebuild/icons/hamburger-close--primary.svg",
         ),
-        "callback": (
+        "callback--primary": (
             "asset": "rebuild/icons/callback--primary.svg",
         ),
-        "tooltip": (
+        "tooltip--primary-medium": (
             "asset": "rebuild/icons/tooltip--primary-medium.svg",
         ),
         "tooltip--error": (
             "asset": "rebuild/icons/tooltip--error.svg",
         ),
-        "chevron-left": (
+        "chevron-left--primary": (
             "asset": "rebuild/icons/chevron-left--primary.svg",
         ),
-        "chevron-right": (
+        "chevron-right--primary": (
             "asset": "rebuild/icons/chevron-right--primary.svg",
         ),
-        "chevron-up": (
-            "asset": "rebuild/icons/chevron-up--primary.svg",
-        ),
-        "chevron-down": (
+        "chevron-down--primary": (
             "asset": "rebuild/icons/chevron-down--primary.svg",
         ),
         "chevron-right--circular-secondary-solid": (
             "asset": "rebuild/icons/chevron-right-circular-secondary-solid.svg",
         ),
-        "arrow-down": (
+        "arrow-down--primary": (
             "asset": "rebuild/icons/arrow-down--primary.svg",
         ),
-        "phone--circular": (
+        "phone--circular-primary": (
             "asset": "rebuild/icons/phone--circular--primary.svg",
         ),
-        "phone--circular-primary-medium": (
+        "phone--circular-alt-primary-medium": (
             "asset": "rebuild/icons/phone--circular--primary-medium.svg",
         ),
-        "money": (
+        "money--primary": (
             "asset": "rebuild/icons/money--primary.svg",
         ),
-        "tick": (
+        "tick--primary": (
             "asset": "rebuild/icons/tick--primary.svg",
         ),
         "tick--circular-secondary": (
@@ -60,68 +54,68 @@
         "tick--circular-success-solid": (
             "asset": "rebuild/icons/tick--circular-success-solid.svg",
         ),
-        "document": (
+        "document--primary": (
             "asset": "rebuild/icons/document--primary.svg",
         ),
-        "close": (
-            "asset": "rebuild/icons/close--primary.svg",
+        "document--primary-medium": (
+            "asset": "rebuild/icons/document--primary-medium.svg", //Same as document but grey medium primary
+        ),
+        "close--primary": (
+            "asset": "rebuild/icons/close--primary.svg", //Similar to hamburger close
         ),
         "close--circular-primary-light-solid": (
             "asset": "rebuild/icons/close--circular-primary-light-solid.svg",
         ),
-        "plus": (
+        "plus--primary": (
             "asset": "rebuild/icons/plus--primary.svg",
         ),
-        "minus": (
+        "minus--primary": (
             "asset": "rebuild/icons/minus--primary.svg",
         ),
-        "email": (
+        "email--primary-medium": (
             "asset": "rebuild/icons/email--primary-medium.svg",
         ),
-        "award": (
+        "award--primary-medium": (
             "asset": "rebuild/icons/award--primary-medium.svg",
         ),
-        "service": (
+        "service--primary-medium": (
             "asset": "rebuild/icons/service--primary-medium.svg",
         ),
-        "customer": (
+        "customer--primary-medium": (
             "asset": "rebuild/icons/customer--primary-medium.svg",
         ),
-        "document-large": (
-            "asset": "rebuild/icons/document--primary-medium.svg",
-        ),
-        "coin": (
+        "coin--primary-medium": (
             "asset": "rebuild/icons/coin--primary-medium.svg",
         ),
-        "people": (
+        "people--primary-medium": (
             "asset": "rebuild/icons/people--primary-medium.svg",
         ),
-        "graph": (
+        "graph--primary-medium": (
             "asset": "rebuild/icons/graph--primary-medium.svg",
         ),
-        "suitcase": (
+        "suitcase--primary-medium": (
             "asset": "rebuild/icons/suitcase--primary-medium.svg",
         ),
-        "equity-release": (
+        "equity-release--primary-medium": (
             "asset": "rebuild/icons/equity-release--primary-medium.svg",
         ),
-        "social-linkedin": (
+        "social-linkedin--circular-primary-solid": (
             "asset": "rebuild/icons/social-linkedin--circular-primary-solid.svg",
         ),
-        "social-facebook": (
+        "social-facebook--circular-primary-solid": (
             "asset": "rebuild/icons/social-facebook--circular-primary-solid.svg",
         ),
-        "social-twitter": (
+        "social-twitter--circular-primary-solid": (
             "asset": "rebuild/icons/social-twitter--circular-primary-solid.svg",
         ),
-        "social-youtube": (
+        "social-youtube--circular-primary-solid": (
             "asset": "rebuild/icons/social-youtube--circular-primary-solid.svg",
         ),
     );
 
     //Icon Markup mixin
     @mixin icon-markup($asset-url, $mask-enable: false) {
-        @if $mask-enable ==true {
+        @if $mask-enable == true {
             mask-position: center;
             mask-position: center;
             mask-repeat: no-repeat;
@@ -154,13 +148,6 @@
         &#{ $self }--#{$name} {
             height: #{$size};
             width: #{$size};
-        }
-    }
-
-    //Create colours for icons
-    @each $name, $colour in $icon-colour {
-        &#{ $self }--#{$name} {
-            background-color: #{$colour};
         }
     }
 }

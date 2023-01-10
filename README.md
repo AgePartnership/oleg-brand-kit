@@ -65,3 +65,33 @@ To run stylelint and then get it to fix the errors:
 
 
 That's pretty much it. Now, go make a brew.
+
+## Using Icons
+
+A list of all icons can be found in `rebuild/icons/_icons.scss`, a HTML demo page listing all icons is available: `test-icons.html`
+
+### Including Icons
+
+Use icons in your components by including the icon class name: `<div class="ap-icon ap-icon--hamburger--primary"></div>`
+
+By default the height and width are not provided, you must set this in the component or with an icon size helper class. There are multiple sizes to use:
+
+* 'tiny': `16px`
+* 'small': `24px`
+* 'medium': `32px`
+* 'ui': `40px`
+* 'large': `88px`
+* 'maxi': `152px`
+
+Include these in your icon as `ap-icon--[size]`, e.g. `ap-icon--small`
+
+A full example of this would be:
+
+`<div class="ap-icon ap-icon--hamburger--primary ap-icon--small"></div>`
+
+
+### Masking icons
+
+If required, you can include `ap-icon--mask` to return the icon as an image mask, allowing you to change the icon colour. This will only work on simple line style icons.
+
+You must then specify a `background-color` within your component.
