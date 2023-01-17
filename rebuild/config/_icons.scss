@@ -1,0 +1,152 @@
+.ap-icon {
+    $self: &; // Notes: https: //css-tricks.com/using-sass-control-scope-bem-naming/
+
+    //Icon sizes
+    $icon-sizes: ('tiny': 16px, 'small': 24px, 'medium': 32px, 'ui': 40px, 'large': 88px, 'maxi': 152px);
+
+    //Icons and their file locations
+    $icons: (
+        'hamburger--primary': (
+            'asset': 'rebuild/icons/hamburger--primary.svg',
+        ),
+        'hamburger-close--primary': (
+            'asset': 'rebuild/icons/hamburger-close--primary.svg',
+        ),
+        'callback--primary': (
+            'asset': 'rebuild/icons/callback--primary.svg',
+        ),
+        'tooltip--primary-medium': (
+            'asset': 'rebuild/icons/tooltip--primary-medium.svg',
+        ),
+        'tooltip--error': (
+            'asset': 'rebuild/icons/tooltip--error.svg',
+        ),
+        'chevron-left--primary': (
+            'asset': 'rebuild/icons/chevron-left--primary.svg',
+        ),
+        'chevron-right--primary': (
+            'asset': 'rebuild/icons/chevron-right--primary.svg',
+        ),
+        'chevron-down--primary': (
+            'asset': 'rebuild/icons/chevron-down--primary.svg',
+        ),
+        'chevron-right--circular-secondary-solid': (
+            'asset': 'rebuild/icons/chevron-right-circular-secondary-solid.svg',
+        ),
+        'arrow-down--primary': (
+            'asset': 'rebuild/icons/arrow-down--primary.svg',
+        ),
+        'phone--circular-primary': (
+            'asset': 'rebuild/icons/phone--circular--primary.svg',
+        ),
+        'phone--circular-alt-primary-medium': (
+            'asset': 'rebuild/icons/phone--circular--primary-medium.svg',
+        ),
+        'money--primary': (
+            'asset': 'rebuild/icons/money--primary.svg',
+        ),
+        'tick--primary': (
+            'asset': 'rebuild/icons/tick--primary.svg',
+        ),
+        'tick--circular-secondary': (
+            'asset': 'rebuild/icons/tick--circular-secondary.svg',
+        ),
+        'tick--circular-success-solid': (
+            'asset': 'rebuild/icons/tick--circular-success-solid.svg',
+        ),
+        'document--primary': (
+            'asset': 'rebuild/icons/document--primary.svg',
+        ),
+        'document--primary-medium': (
+            'asset': 'rebuild/icons/document--primary-medium.svg',
+        ),
+        'close--primary': (
+            'asset': 'rebuild/icons/close--primary.svg',
+        ),
+        'close--circular-primary-light-solid': (
+            'asset': 'rebuild/icons/close--circular-primary-light-solid.svg',
+        ),
+        'plus--primary': (
+            'asset': 'rebuild/icons/plus--primary.svg',
+        ),
+        'minus--primary': (
+            'asset': 'rebuild/icons/minus--primary.svg',
+        ),
+        'email--primary-medium': (
+            'asset': 'rebuild/icons/email--primary-medium.svg',
+        ),
+        'award--primary-medium': (
+            'asset': 'rebuild/icons/award--primary-medium.svg',
+        ),
+        'service--primary-medium': (
+            'asset': 'rebuild/icons/service--primary-medium.svg',
+        ),
+        'customer--primary-medium': (
+            'asset': 'rebuild/icons/customer--primary-medium.svg',
+        ),
+        'coin--primary-medium': (
+            'asset': 'rebuild/icons/coin--primary-medium.svg',
+        ),
+        'people--primary-medium': (
+            'asset': 'rebuild/icons/people--primary-medium.svg',
+        ),
+        'graph--primary-medium': (
+            'asset': 'rebuild/icons/graph--primary-medium.svg',
+        ),
+        'suitcase--primary-medium': (
+            'asset': 'rebuild/icons/suitcase--primary-medium.svg',
+        ),
+        'equity-release--primary-medium': (
+            'asset': 'rebuild/icons/equity-release--primary-medium.svg',
+        ),
+        'social-linkedin--circular-primary-solid': (
+            'asset': 'rebuild/icons/social-linkedin--circular-primary-solid.svg',
+        ),
+        'social-facebook--circular-primary-solid': (
+            'asset': 'rebuild/icons/social-facebook--circular-primary-solid.svg',
+        ),
+        'social-twitter--circular-primary-solid': (
+            'asset': 'rebuild/icons/social-twitter--circular-primary-solid.svg',
+        ),
+        'social-youtube--circular-primary-solid': (
+            'asset': 'rebuild/icons/social-youtube--circular-primary-solid.svg',
+        ),
+    );
+
+    //Icon Markup mixin
+    @mixin icon-markup($asset-url, $mask-enable: false) {
+        @if $mask-enable == true {
+            mask-image: url(#{$asset-url});
+            mask-position: center;
+            mask-repeat: no-repeat;
+            mask-size: contain;
+
+        } @else {
+            background-image: url(#{$asset-url});
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+    //Loop through all icons and create their CSS markup
+    @each $icon, $config in $icons {
+        &#{ $self }--#{$icon} {
+            @include icon-markup(map-get($config, 'asset'), false);
+
+            //If mash class is used, display the icon as an image mask
+            &.ap-icon--mask {
+                background-image: none; //Disable background image as we're now using image mask
+                @include icon-markup(map-get($config, 'asset'), true);
+            }
+        }
+    }
+
+    //Create icon sizes
+    @each $name, $size in $icon-sizes {
+        &#{ $self }--#{$name} {
+            height: #{$size};
+            width: #{$size};
+        }
+    }
+}
