@@ -68,7 +68,7 @@ That's pretty much it. Now, go make a brew.
 
 ## Using Icons
 
-A list of all icons can be found in `rebuild/icons/_icons.scss`, a HTML demo page listing all icons is available: `test-icons.html`
+A list of all icons can be found in `rebuild/icons/_icons.scss`.
 
 ### Including Icons
 
