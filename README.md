@@ -71,10 +71,109 @@ That's pretty much it. Now, go make a brew.
 A list of all icons can be found in `rebuild/icons/_icons.scss`.
 
 ### Including Icons
+Icons can be included in a variety of methods;
 
-Use icons in your components by including the icon class name: `<div class="ap-icon ap-icon--hamburger--primary"></div>`
+* Asset File - `<img>`
+* CSS - E.g. Pseudo elements
+* HTML - Class on HTML elements
 
-By default the height and width are not provided, you must set this in the component or with an icon size helper class. There are multiple sizes to use:
+#### Asset File Method
+
+SVGs assets can be used as normal. For example:
+
+```
+<img src="your_public_path/assets/images/icons/hamburger--primary.svg" width="20" height="14" alt="Icon" />
+```
+
+
+#### CSS Method
+
+In your CSS you can include icon styles through the use of `@extend`. 
+
+Example in a class:
+
+```
+.example__icon {
+    @extend .ap-icon;
+    @extend .ap-icon--hamburger--primary;
+    @extend .ap-icon--small;
+}
+```
+
+Example in a pseudo class:
+
+```
+.example__icon {
+    position:relative;
+
+    &::before {
+        @extend .ap-icon;
+        @extend .ap-icon--hamburger--primary;
+        @extend .ap-icon--small;
+        content: '';
+        display: block;
+        left: 0;
+        position: absolute;
+    }
+}
+```
+
+### Masking icons
+
+If required, you can include `@extend .ap-icon--mask;` to return the icon as an image mask, allowing you to change the icon colour. This will only work on simple line style icons.
+
+You must then specify a `background-color` within your CSS.
+
+Example:
+
+```
+.example__icon {
+    position:relative;
+
+    &::before {
+        @extend .ap-icon;
+        @extend .ap-icon--hamburger--primary;
+        @extend .ap-icon--small;
+        @extend .ap-icon--mask;
+        background-color: red;
+        content: '';
+        display: block;
+        left: 0;
+        position: absolute;
+    }
+}
+```
+
+
+#### HTML Method
+Use icons in your components by including their class names e.g. `ap-icon--hamburger--primary`.
+
+Example:
+
+`<div class="ap-icon ap-icon--hamburger--primary ap-icon--small"></div>`
+
+### Masking icons
+
+If required, you can include `ap-icon--mask` to return the icon as an image mask, allowing you to change the icon colour. This will only work on simple line style icons.
+
+You must then specify a `background-color` within your component.
+
+Example:
+
+`<div class="ap-icon ap-icon--hamburger--primary ap-icon--small ap-icon--mask example__icon"></div>`
+
+Then in CSS, somthing similar to:
+
+```
+.example__icon {
+    background-color: red;
+}
+```
+
+### Icon sizes
+By default the height and width are not provided, you must set this manually in your `<img>` tag or with an icon size helper class.
+
+Sizes available to use:
 
 * 'tiny': `16px`
 * 'small': `24px`
@@ -85,13 +184,16 @@ By default the height and width are not provided, you must set this in the compo
 
 Include these in your icon as `ap-icon--[size]`, e.g. `ap-icon--small`
 
-A full example of this would be:
+#### CSS
+
+```
+.example__icon {
+    @extend .ap-icon;
+    @extend .ap-icon--hamburger--primary;
+    @extend .ap-icon--small;
+}
+```
+
+#### HTML
 
 `<div class="ap-icon ap-icon--hamburger--primary ap-icon--small"></div>`
-
-
-### Masking icons
-
-If required, you can include `ap-icon--mask` to return the icon as an image mask, allowing you to change the icon colour. This will only work on simple line style icons.
-
-You must then specify a `background-color` within your component.
