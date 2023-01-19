@@ -70,6 +70,10 @@ That's pretty much it. Now, go make a brew.
 
 A list of all icons can be found in `rebuild/icons/_icons.scss`.
 
+*Note:* Image assets for icons are stored here: `rebuild/assets/images/icons`. The `icons` folder should be copied from this location into your project's public image directory where you can then access the asset files and use in your project as you would normally. Ideally this should be setup as a Gulp task.
+
+If including icons via CSS, ensure the `$image-dir` is pointing to your project's public image directory.
+
 ### Including Icons
 Icons can be included in a variety of methods;
 
@@ -82,7 +86,7 @@ Icons can be included in a variety of methods;
 SVGs assets can be used as normal. For example:
 
 ```
-<img src="your_public_path/assets/images/icons/hamburger--primary.svg" width="20" height="14" alt="Icon" />
+<img src="your_public_directory_path/assets/images/icons/hamburger--primary.svg" width="20" height="14" alt="Icon" />
 ```
 
 
