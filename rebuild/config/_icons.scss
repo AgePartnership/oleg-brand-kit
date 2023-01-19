@@ -147,42 +147,14 @@
             //Use as: `<div class="ap-icon ap-icon--social-youtube--circular-primary-solid ap-icon--[size]"></div>`
             'asset': $image-dir + '/icons/social-youtube--circular-primary-solid.svg',
         ),
-        'car--primary': (
-            //Use as: `<div class="ap-icon ap-icon--car--primary ap-icon--[size]"></div>`
-            'asset': $image-dir + '/icons/car--primary.svg',
-        ),
         'checkboxes--primary-medium': (
             //Use as: `<div class="ap-icon ap-icon--checkboxes--primary-medium ap-icon--[size]"></div>`
             'asset': $image-dir + '/icons/checkboxes--primary-medium.svg',
         ),
-        'heart-in-hands--primary': (
-            //Use as: `<div class="ap-icon ap-icon--heart-in-hands--primary ap-icon--[size]"></div>`
-            'asset': $image-dir + '/icons/heart-in-hands--primary.svg',
-        ),
         'home-improvements--primary-medium': (
             //Use as: `<div class="ap-icon ap-icon--home-improvements--primary-medium ap-icon--[size]"></div>`
             'asset': $image-dir + '/icons/home-improvements--primary-medium.svg',
-        ),
-        'house--primary': (
-            //Use as: `<div class="ap-icon ap-icon--house--primary ap-icon--[size]"></div>`
-            'asset': $image-dir + '/icons/house--primary.svg',
-        ),
-        'paint-roller--primary': (
-            //Use as: `<div class="ap-icon ap-icon--paint-roller--primary ap-icon--[size]"></div>`
-            'asset': $image-dir + '/icons/paint-roller--primary.svg',
-        ),
-        'question-mark-circle--primary': (
-            //Use as: `<div class="ap-icon ap-icon--question-mark-circle--primary ap-icon--[size]"></div>`
-            'asset': $image-dir + '/icons/question-mark-circle--primary.svg',
-        ),
-        'rising-graph--primary': (
-            //Use as: `<div class="ap-icon ap-icon--rising-graph--primary ap-icon--[size]"></div>`
-            'asset': $image-dir + '/icons/rising-graph--primary.svg',
-        ),
-        'suitcase--primary': (
-            //Use as: `<div class="ap-icon ap-icon--suitcase--primary ap-icon--[size]"></div>`
-            'asset': $image-dir + '/icons/suitcase--primary.svg',
-        ),
+        )
     );
 
     //Icon Markup mixin
