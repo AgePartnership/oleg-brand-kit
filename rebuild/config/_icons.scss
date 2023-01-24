@@ -1,0 +1,188 @@
+.ap-icon {
+    $self: &; // Notes: https: //css-tricks.com/using-sass-control-scope-bem-naming/
+
+    //Icon sizes
+    $icon-sizes: ('tiny': 16px, 'small': 24px, 'medium': 32px, 'ui': 40px, 'large': 88px, 'maxi': 152px);
+
+    //Icons and their file locations
+    //Where `ap-icon--[size]` is shown, replace with size from `$icon-sizes` e.g. `ap-icon--small`
+    $icons: (
+        'hamburger--primary': (
+            //Use as: `<div class="ap-icon ap-icon--hamburger--primary ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/hamburger--primary.svg',
+        ),
+        'hamburger-close--primary': (
+            //Use as: `<div class="ap-icon ap-icon--hamburger-close--primary ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/hamburger-close--primary.svg',
+        ),
+        'callback--primary': (
+            //Use as: `<div class="ap-icon ap-icon--callback--primary ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/callback--primary.svg',
+        ),
+        'tooltip--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--tooltip--primary-medium ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/tooltip--primary-medium.svg',
+        ),
+        'tooltip--error': (
+            //Use as: `<div class="ap-icon ap-icon--tooltip--error ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/tooltip--error.svg',
+        ),
+        'chevron-left--primary': (
+            //Use as: `<div class="ap-icon ap-icon--chevron-left--primary ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/chevron-left--primary.svg',
+        ),
+        'chevron-right--primary': (
+            //Use as: `<div class="ap-icon ap-icon--chevron-right--primary ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/chevron-right--primary.svg',
+        ),
+        'chevron-down--primary': (
+            //Use as: `<div class="ap-icon ap-icon--chevron-down--primar ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/chevron-down--primary.svg',
+        ),
+        'chevron-right--circular-secondary-solid': (
+            //Use as: `<div class="ap-icon ap-icon--chevron-right--circular-secondary-solid ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/chevron-right-circular-secondary-solid.svg',
+        ),
+        'arrow-down--primary': (
+            //Use as: `<div class="ap-icon ap-icon--arrow-down--primary ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/arrow-down--primary.svg',
+        ),
+        'phone--circular-primary': (
+            //Use as: `<div class="ap-icon ap-icon--phone--circular-primary ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/phone--circular--primary.svg',
+        ),
+        'phone--circular-alt-primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--phone--circular-alt-primary-medium ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/phone--circular--primary-medium.svg',
+        ),
+        'money--primary': (
+            //Use as: `<div class="ap-icon ap-icon--money--primary ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/money--primary.svg',
+        ),
+        'tick--primary': (
+            //Use as: `<div class="ap-icon ap-icon--tick--primary ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/tick--primary.svg',
+        ),
+        'tick--circular-secondary': (
+            //Use as: `<div class="ap-icon ap-icon--tick--circular-secondary ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/tick--circular-secondary.svg',
+        ),
+        'tick--circular-success-solid': (
+            //Use as: `<div class="ap-icon ap-icon--tick--circular-success-solid ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/tick--circular-success-solid.svg',
+        ),
+        'document--primary': (
+            //Use as: `<div class="ap-icon ap-icon--document--primary ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/document--primary.svg',
+        ),
+        'document--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--document--primary-medium ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/document--primary-medium.svg',
+        ),
+        'close--primary': (
+            //Use as: `<div class="ap-icon ap-icon--close--primary ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/close--primary.svg',
+        ),
+        'close--circular-primary-light-solid': (
+            //Use as: `<div class="ap-icon ap-icon--close--circular-primary-light-solid ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/close--circular-primary-light-solid.svg',
+        ),
+        'plus--primary': (
+            //Use as: `<div class="ap-icon ap-icon--plus--primary ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/plus--primary.svg',
+        ),
+        'minus--primary': (
+            //Use as: `<div class="ap-icon ap-icon--minus--primary ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/minus--primary.svg',
+        ),
+        'email--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--email--primary-medium ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/email--primary-medium.svg',
+        ),
+        'award--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--award--primary-medium ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/award--primary-medium.svg',
+        ),
+        'clock--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--clock--primary-medium ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/clock--primary-medium.svg',
+        ),
+        'customer--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--customer--primary-medium ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/customer--primary-medium.svg',
+        ),
+        'coin--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--coin--primary-medium ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/coin--primary-medium.svg',
+        ),
+        'people--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--people--primary-medium ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/people--primary-medium.svg',
+        ),
+        'graph--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--graph--primary-medium ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/graph--primary-medium.svg',
+        ),
+        'suitcase--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--suitcase--primary-medium ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/suitcase--primary-medium.svg',
+        ),
+        'equity-release--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--equity-release--primary-medium ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/equity-release--primary-medium.svg',
+        ),
+        'social-linkedin--circular-primary-solid': (
+            //Use as: `<div class="ap-icon ap-icon--social-linkedin--circular-primary-solid ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/social-linkedin--circular-primary-solid.svg',
+        ),
+        'social-facebook--circular-primary-solid': (
+            //Use as: `<div class="ap-icon ap-icon--social-facebook--circular-primary-solid ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/social-facebook--circular-primary-solid.svg',
+        ),
+        'social-twitter--circular-primary-solid': (
+            //Use as: `<div class="ap-icon ap-icon--social-twitter--circular-primary-solid ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/social-twitter--circular-primary-solid.svg',
+        ),
+        'social-youtube--circular-primary-solid': (
+            //Use as: `<div class="ap-icon ap-icon--social-youtube--circular-primary-solid ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/social-youtube--circular-primary-solid.svg',
+        ),
+    );
+
+    //Icon Markup mixin
+    @mixin icon-markup($asset-url, $mask-enable: false) {
+        @if $mask-enable == true {
+            mask-image: url(#{$asset-url});
+            mask-position: center;
+            mask-repeat: no-repeat;
+            mask-size: contain;
+
+        } @else {
+            background-image: url(#{$asset-url});
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+    //Loop through all icons and create their CSS markup
+    @each $icon, $config in $icons {
+        &#{ $self }--#{$icon} {
+            @include icon-markup(map-get($config, 'asset'), false);
+
+            //If mask class is used, display the icon as an image mask
+            &.ap-icon--mask {
+                background-image: none; //Disable background image as we're now using image mask
+                @include icon-markup(map-get($config, 'asset'), true);
+            }
+        }
+    }
+
+    //Create icon sizes
+    @each $name, $size in $icon-sizes {
+        &#{ $self }--#{$name} {
+            height: #{$size};
+            width: #{$size};
+        }
+    }
+}
