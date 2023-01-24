@@ -1,5 +1,5 @@
 // Base font stack
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap'); // sass-lint:disable-line no-url-domains no-url-protocols
+@import 'assets/fonts/open-sans';
 @import url('https://use.typekit.net/kvh8avu.css'); // sass-lint:disable-line no-url-domains no-url-protocols
 $font--primary: 'Open Sans', Helvetica, Arial, 'Liberation Sans', sans-serif;
 $font--secondary: 'lemonde-courrier', 'Century Schoolbook', serif;
