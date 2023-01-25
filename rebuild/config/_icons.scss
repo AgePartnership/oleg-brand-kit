@@ -147,6 +147,14 @@
             //Use as: `<div class="ap-icon ap-icon--social-youtube--circular-primary-solid ap-icon--[size]"></div>`
             'asset': $image-dir + '/icons/social-youtube--circular-primary-solid.svg',
         ),
+        'checkboxes--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--checkboxes--primary-medium ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/checkboxes--primary-medium.svg',
+        ),
+        'home-improvements--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--home-improvements--primary-medium ap-icon--[size]"></div>`
+            'asset': $image-dir + '/icons/home-improvements--primary-medium.svg',
+        )
     );
 
     //Icon Markup mixin
