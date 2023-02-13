@@ -21,7 +21,7 @@
         ),
         'callback-alt--primary-medium': (
             //Use as: `<div class="ap-icon ap-icon--callback-alt--primary-medium ap-icon--[size]"></div>`
-            'asset': $image-dir + '/icons/callback-alt--primary-medium.svg',
+            'asset': $brand-assets-dir + 'images/icons/callback-alt--primary-medium.svg',
         ),
         'tooltip--primary-medium': (
             //Use as: `<div class="ap-icon ap-icon--tooltip--primary-medium ap-icon--[size]"></div>`
@@ -85,7 +85,7 @@
         ),
         'book--primary-medium': (
             //Use as: `<div class="ap-icon ap-icon--book--primary-medium ap-icon--[size]"></div>`
-            'asset': $image-dir + '/icons/book--primary-medium.svg',
+            'asset': $brand-assets-dir + 'images/icons/book--primary-medium.svg',
         ),
         'close--primary': (
             //Use as: `<div class="ap-icon ap-icon--close--primary ap-icon--[size]"></div>`
