@@ -43,6 +43,10 @@
             //Use as: `<div class="ap-icon ap-icon--chevron-down--primar ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/chevron-down--primary.svg',
         ),
+        'chevron-left--circular-secondary-solid': (
+            //Use as: `<div class="ap-icon ap-icon--chevron-left--circular-secondary-solid ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/chevron-left-circular-secondary-solid.svg',
+        ),
         'chevron-right--circular-secondary-solid': (
             //Use as: `<div class="ap-icon ap-icon--chevron-right--circular-secondary-solid ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/chevron-right-circular-secondary-solid.svg',
@@ -139,6 +143,30 @@
             //Use as: `<div class="ap-icon ap-icon--equity-release--primary-medium ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/equity-release--primary-medium.svg',
         ),
+        'checkboxes--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--checkboxes--primary-medium ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/checkboxes--primary-medium.svg',
+        ),
+        'home-improvements--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--home-improvements--primary-medium ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/home-improvements--primary-medium.svg',
+        ),
+        'social-linkedin--primary': (
+            //Use as: `<div class="ap-icon ap-icon--social-linkedin--primary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/social-linkedin--primary.svg',
+        ),
+        'social-facebook--primary': (
+            //Use as: `<div class="ap-icon ap-icon--social-facebook--primary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/social-facebook--primary.svg',
+        ),
+        'social-twitter--primary': (
+            //Use as: `<div class="ap-icon ap-icon--social-twitter--primary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/social-twitter--primary.svg',
+        ),
+        'social-youtube--primary': (
+            //Use as: `<div class="ap-icon ap-icon--social-youtube--primary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/social-youtube--primary.svg',
+        ),
         'social-linkedin--circular-primary-solid': (
             //Use as: `<div class="ap-icon ap-icon--social-linkedin--circular-primary-solid ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/social-linkedin--circular-primary-solid.svg',
@@ -154,14 +182,6 @@
         'social-youtube--circular-primary-solid': (
             //Use as: `<div class="ap-icon ap-icon--social-youtube--circular-primary-solid ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/social-youtube--circular-primary-solid.svg',
-        ),
-        'checkboxes--primary-medium': (
-            //Use as: `<div class="ap-icon ap-icon--checkboxes--primary-medium ap-icon--[size]"></div>`
-            'asset': $brand-assets-dir + 'images/icons/checkboxes--primary-medium.svg',
-        ),
-        'home-improvements--primary-medium': (
-            //Use as: `<div class="ap-icon ap-icon--home-improvements--primary-medium ap-icon--[size]"></div>`
-            'asset': $brand-assets-dir + 'images/icons/home-improvements--primary-medium.svg',
         )
     );
 
