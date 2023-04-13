@@ -143,14 +143,6 @@
             //Use as: `<div class="ap-icon ap-icon--equity-release--primary-medium ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/equity-release--primary-medium.svg',
         ),
-        'checkboxes--primary-medium': (
-            //Use as: `<div class="ap-icon ap-icon--checkboxes--primary-medium ap-icon--[size]"></div>`
-            'asset': $brand-assets-dir + 'images/icons/checkboxes--primary-medium.svg',
-        ),
-        'home-improvements--primary-medium': (
-            //Use as: `<div class="ap-icon ap-icon--home-improvements--primary-medium ap-icon--[size]"></div>`
-            'asset': $brand-assets-dir + 'images/icons/home-improvements--primary-medium.svg',
-        ),
         'social-linkedin--primary': (
             //Use as: `<div class="ap-icon ap-icon--social-linkedin--primary ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/social-linkedin--primary.svg',
@@ -182,6 +174,22 @@
         'social-youtube--circular-primary-solid': (
             //Use as: `<div class="ap-icon ap-icon--social-youtube--circular-primary-solid ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/social-youtube--circular-primary-solid.svg',
+        ),
+        'checkboxes--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--checkboxes--primary-medium ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/checkboxes--primary-medium.svg',
+        ),
+        'home-improvements--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--home-improvements--primary-medium ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/home-improvements--primary-medium.svg',
+        ),
+        'pig-money-box--primary': (
+            //Use as: `<div class="ap-icon ap-icon--pig-money-box--primary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/pig-money-box--primary.svg',
+        ),
+        'shaking-hands--primary': (
+            //Use as: `<div class="ap-icon ap-icon--shaking-hands--primary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/shaking-hands--primary.svg',
         )
     );
 
