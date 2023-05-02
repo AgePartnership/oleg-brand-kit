@@ -75,6 +75,10 @@
             //Use as: `<div class="ap-icon ap-icon--tick--circular-secondary ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/tick--circular-secondary.svg',
         ),
+        'tick--circular--primary': (
+            //Use as: `<div class="ap-icon ap-icon--tick--circular--primary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/tick--circular--primary.svg',
+        ),
         'tick--circular-success-solid': (
             //Use as: `<div class="ap-icon ap-icon--tick--circular-success-solid ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/tick--circular-success-solid.svg',
@@ -90,6 +94,10 @@
         'book--primary-medium': (
             //Use as: `<div class="ap-icon ap-icon--book--primary-medium ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/book--primary-medium.svg',
+        ),
+        'book--primary': (
+            //Use as: `<div class="ap-icon ap-icon--book--primary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/book--primary.svg',
         ),
         'close--primary': (
             //Use as: `<div class="ap-icon ap-icon--close--primary ap-icon--[size]"></div>`
@@ -115,6 +123,10 @@
             //Use as: `<div class="ap-icon ap-icon--award--primary-medium ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/award--primary-medium.svg',
         ),
+        'award--primary': (
+            //Use as: `<div class="ap-icon ap-icon--award--primary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/award--primary.svg',
+        ),
         'clock--primary-medium': (
             //Use as: `<div class="ap-icon ap-icon--clock--primary-medium ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/clock--primary-medium.svg',
@@ -122,6 +134,10 @@
         'customer--primary-medium': (
             //Use as: `<div class="ap-icon ap-icon--customer--primary-medium ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/customer--primary-medium.svg',
+        ),
+        'customer--primary': (
+            //Use as: `<div class="ap-icon ap-icon--customer--primary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/customer--primary.svg',
         ),
         'coin--primary-medium': (
             //Use as: `<div class="ap-icon ap-icon--coin--primary-medium ap-icon--[size]"></div>`
@@ -303,6 +319,18 @@
             //Use as: `<div class="ap-icon ap-icon--wallet--primary ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/wallet--primary.svg',
         ),
+        'house--primary': (
+            //Use as: `<div class="ap-icon ap-icon--house--primary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/house--primary.svg',
+        ),
+        'house-and-coins--primary': (
+            //Use as: `<div class="ap-icon ap-icon--house-and-coins--primary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/house-and-coins--primary.svg',
+        ),
+        'pointer--primary': (
+            //Use as: `<div class="ap-icon ap-icon--pointer--primary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/pointer--primary.svg',
+        )
     );
 
     //Icon Markup mixin
