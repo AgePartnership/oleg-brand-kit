@@ -131,6 +131,10 @@
             //Use as: `<div class="ap-icon ap-icon--clock--primary-medium ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/clock--primary-medium.svg',
         ),
+        'clock--primary': (
+            //Use as: `<div class="ap-icon ap-icon--clock--primary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/clock--primary.svg',
+        ),
         'customer--primary-medium': (
             //Use as: `<div class="ap-icon ap-icon--customer--primary-medium ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/customer--primary-medium.svg',
@@ -147,17 +151,45 @@
             //Use as: `<div class="ap-icon ap-icon--people--primary-medium ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/people--primary-medium.svg',
         ),
+        'people--primary': (
+            //Use as: `<div class="ap-icon ap-icon--people--primary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/people--primary.svg',
+        ),
+        'people--secondary': (
+            //Use as: `<div class="ap-icon ap-icon--people--secondary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/people--secondary.svg',
+        ),
         'graph--primary-medium': (
             //Use as: `<div class="ap-icon ap-icon--graph--primary-medium ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/graph--primary-medium.svg',
+        ),
+        'graph--primary': (
+            //Use as: `<div class="ap-icon ap-icon--graph--primary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/graph--primary.svg',
         ),
         'suitcase--primary-medium': (
             //Use as: `<div class="ap-icon ap-icon--suitcase--primary-medium ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/suitcase--primary-medium.svg',
         ),
+        'suitcase--primary': (
+            //Use as: `<div class="ap-icon ap-icon--suitcase--primary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/suitcase--primary.svg',
+        ),
+        'suitcase--secondary': (
+            //Use as: `<div class="ap-icon ap-icon--suitcase-- ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/suitcase--.svg',
+        ),
         'equity-release--primary-medium': (
             //Use as: `<div class="ap-icon ap-icon--equity-release--primary-medium ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/equity-release--primary-medium.svg',
+        ),
+        'equity-release--primary': (
+            //Use as: `<div class="ap-icon ap-icon--equity-release--primary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/equity-release--primary.svg',
+        ),
+        'equity-release--secondary': (
+            //Use as: `<div class="ap-icon ap-icon--equity-release--secondary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/equity-release--secondary.svg',
         ),
         'social-linkedin--primary': (
             //Use as: `<div class="ap-icon ap-icon--social-linkedin--primary ap-icon--[size]"></div>`
@@ -195,9 +227,25 @@
             //Use as: `<div class="ap-icon ap-icon--checkboxes--primary-medium ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/checkboxes--primary-medium.svg',
         ),
+        'checkboxes--primary': (
+            //Use as: `<div class="ap-icon ap-icon--checkboxes--primary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/checkboxes--primary.svg',
+        ),
+        'checkboxes--secondary': (
+            //Use as: `<div class="ap-icon ap-icon--checkboxes--secondary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/checkboxes--secondary.svg',
+        ),
         'home-improvements--primary-medium': (
             //Use as: `<div class="ap-icon ap-icon--home-improvements--primary-medium ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/home-improvements--primary-medium.svg',
+        ),
+        'home-improvements--primary': (
+            //Use as: `<div class="ap-icon ap-icon--home-improvements--primary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/home-improvements--primary.svg',
+        ),
+        'home-improvements--secondary': (
+            //Use as: `<div class="ap-icon ap-icon--home-improvements--secondary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/home-improvements--secondary.svg',
         ),
         'pig-money-box--primary': (
             //Use as: `<div class="ap-icon ap-icon--pig-money-box--primary ap-icon--[size]"></div>`
