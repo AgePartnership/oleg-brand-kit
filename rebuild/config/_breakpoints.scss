@@ -1,3 +1,4 @@
+// Breakpoints
 // These variables are used by the breakpoint mixins (mixins/_breakpoints.scss)
 $mobile-upper: 599px;
 $tablet-portrait-lower: 600px;
@@ -7,3 +8,6 @@ $tablet-landscape-upper: 1199px;
 $desktop-lower: 1200px;
 $desktop-upper: 1799px;
 $big-desktop-lower: 1800px;
+
+//Max width for pages layouts
+$page-max-width: $big-desktop-lower;
