@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 88.51 78.39">
-  <defs>
-    <style>
-      .cls-1{fill:none;stroke:#282d5b;stroke-miterlimit:10;stroke-width:2.73px}
-    </style>
-  </defs>
-  <circle cx="28.02" cy="23.82" r="13.96" class="cls-1"/>
-  <circle cx="28.02" cy="23.82" r="6.98" class="cls-1"/>
-  <circle cx="57.96" cy="53.76" r="13.96" class="cls-1"/>
-  <circle cx="57.96" cy="53.76" r="6.98" class="cls-1"/>
-  <path d="M32.21 64.36H18.53c-.71 0-1.29-.58-1.29-1.29V49.39c0-1.15 1.39-1.72 2.2-.91l3.42 3.43c.5.5 1.32.5 1.82 0l37.26-36.57c.5-.5 1.32-.5 1.82 0l3.08 3.08c.5.5.5 1.32 0 1.82L29.57 56.81c-.5.5-.5 1.32 0 1.82l3.54 3.54c.81.81.24 2.2-.91 2.2Z" class="cls-1"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="12.7 8.49 60.59 60.59">   <defs>     <style>       .cls-1{fill:none;stroke:#282d5b;stroke-miterlimit:10;stroke-width:2.73px}     </style>   </defs>   <circle cx="28.02" cy="23.82" r="13.96" class="cls-1"></circle>   <circle cx="28.02" cy="23.82" r="6.98" class="cls-1"></circle>   <circle cx="57.96" cy="53.76" r="13.96" class="cls-1"></circle>   <circle cx="57.96" cy="53.76" r="6.98" class="cls-1"></circle>   <path d="M32.21 64.36H18.53c-.71 0-1.29-.58-1.29-1.29V49.39c0-1.15 1.39-1.72 2.2-.91l3.42 3.43c.5.5 1.32.5 1.82 0l37.26-36.57c.5-.5 1.32-.5 1.82 0l3.08 3.08c.5.5.5 1.32 0 1.82L29.57 56.81c-.5.5-.5 1.32 0 1.82l3.54 3.54c.81.81.24 2.2-.91 2.2Z" class="cls-1"></path> </svg>
