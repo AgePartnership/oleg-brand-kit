@@ -1,11 +1,17 @@
 {
-    "name": "oleg-brand-kit",
+    "name": "@agepartnership/oleg-brand-kit",
     "version": "3.9.2",
     "description": "A place to store global brand information for use across various digital properties (Sass colour variables, typography etc)",
     "license": "MIT",
     "author": "Sam Hardacre <me@nocturnalmonkey.com>",
     "main": "index.js",
-    "repository": "git@github.com:AgePartnership/oleg-brand-kit.git",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:AgePartnership/oleg-brand-kit.git"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    },
     "engines": {
         "node": ">=12.13.0"
     },
