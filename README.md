@@ -10,18 +10,14 @@ We use [`npm version`](https://docs.npmjs.com/cli/v6/commands/npm-version) with 
 Here's the process for publishing your changes:
 1. Merge your approved changes into develop and pull down develop locally.
 2. Run `npm version [patch / minor / major]`, following normal [semantic versioning constraints](https://semver.org/).
+3. Run `npm publish` to push your changes up to the registry.
 
 ## Install using npm
 
 Before you can use npm, you need to [install Node](https://nodejs.org/en/download/).
 
 Once you've done that, in the root of your project directory, run:
-
-<pre>
-    <code>
-        npm install oleg-brand-kit
-    </code>
-</pre>
+`npm install @agepartnersip/oleg-brand-kit --save-dev`
 
 This will install the starter pack in the 'node_modules' directory located in the root of your project.
 
