@@ -1,4 +1,4 @@
-extends: "@agepartnership/ap-stylelint-config"
+extends: ap-stylelint-config
 
 ignoreFiles:
   - "**/*.yaml"
