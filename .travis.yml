@@ -1,9 +1,15 @@
 language: node_js
+before_install: 
+  - nvm install $(cat .nvmrc)
+  - nvm use
+  - echo "//npm.pkg.github.com/:_authToken=$GITHUB_AUTH_TOKEN" > .npmrc
+  - npm config --global set agepartnership:registry https://npm.pkg.github.com
+  - cp .npmrc ~/
 install:
-- npm install
+  - npm install
 script:
-- npm run stylelint
-- npm run build
+  - npm run stylelint
+  - npm run build
 cache:
   directories:
   - $HOME/.npm
