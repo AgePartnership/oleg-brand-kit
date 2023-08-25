@@ -26,7 +26,7 @@
         "oleg-starter-pack": "^2.3.3"
     },
     "devDependencies": {
-        "@agepartnership/ap-stylelint-config": "^2.0.0",
+        "@agepartnership/ap-stylelint-config": "^2.0.1",
         "node-sass": "^6.0.0"
     }
 }
