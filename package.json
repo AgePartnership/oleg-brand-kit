@@ -18,8 +18,8 @@
     "scripts": {
         "preversion": "git checkout develop",
         "postversion": "git push --tags origin develop && git checkout master && git pull --tags origin develop && git push --tags origin master && git checkout develop",
-        "lint:scss": "stylelint --rd --rdd \"**/*.{css,scss,sass}\" scss",
-        "fix:scss": "stylelint --rd --rdd \"**/*.{css,scss,sass}\" scss --fix",
+        "lint:scss": "stylelint --rd --rdd \"**/*.{css,scss,sass}\" -s scss",
+        "fix:scss": "stylelint --rd --rdd \"**/*.{css,scss,sass}\" -s scss --fix",
         "build": "node-sass --output-style compressed test.scss test.css"
     },
     "dependencies": {
@@ -27,6 +27,7 @@
     },
     "devDependencies": {
         "@agepartnership/ap-stylelint-config": "^2.0.1",
-        "node-sass": "^6.0.0"
+        "node-sass": "^6.0.0",
+        "postcss": "^8.4.28"
     }
 }
