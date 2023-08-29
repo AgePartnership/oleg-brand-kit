@@ -23,6 +23,7 @@
         "build": "node-sass --output-style compressed test.scss test.css"
     },
     "dependencies": {
+        "npmrc": "^1.1.1",
         "oleg-starter-pack": "^2.3.3"
     },
     "devDependencies": {
