@@ -4,7 +4,6 @@ before_install:
   - nvm use
   - echo "//npm.pkg.github.com/:_authToken=$GITHUB_AUTH_TOKEN" > .npmrc
   - npm config set agepartnership:registry=https://npm.pkg.github.com
-  - cp .npmrc ~/
 install:
   - travis_wait npm ci
 script:
