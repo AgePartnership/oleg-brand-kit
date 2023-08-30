@@ -17,7 +17,7 @@ Here's the process for publishing your changes:
 Before you can use npm, you need to [install Node](https://nodejs.org/en/download/).
 
 Once you've done that, in the root of your project directory, run:
-`npm install @agepartnersip/oleg-brand-kit --save-dev`
+`npm install @agepartnersip/oleg-brand-kit`
 
 This will install the starter pack in the 'node_modules' directory located in the root of your project.
 
