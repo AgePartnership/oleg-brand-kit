@@ -1,8 +1,6 @@
-$brand-assets-dir: '../assets/' !default;
-// rebrand //
-@import 'config/base-unit';
-// rebuild //
-@import 'rebuild/config/breakpoints';
-@import 'rebuild/config/colour';
-@import 'rebuild/config/typography';
-@import 'rebuild/config/icons';
+@import 'config/breakpoints';
+@import 'config/colour';
+@import 'config/space';
+@import 'config/typography';
+
+@import 'utilities/typography';
