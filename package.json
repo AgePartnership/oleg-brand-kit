@@ -1,6 +1,6 @@
 {
     "name": "oleg-brand-kit",
-    "version": "3.9.2",
+    "version": "3.9.1",
     "description": "A place to store global brand information for use across various digital properties (Sass colour variables, typography etc)",
     "license": "MIT",
     "author": "Sam Hardacre <me@nocturnalmonkey.com>",
