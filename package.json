@@ -23,7 +23,7 @@
         "build": "node-sass --output-style compressed test.scss test.css"
     },
     "dependencies": {
-        "@agepartnership/oleg-starter-pack": "^5.0.0"
+        "oleg-starter-pack": "^2.3.3"
     },
     "devDependencies": {
         "@agepartnership/ap-stylelint-config": "^2.0.1",
