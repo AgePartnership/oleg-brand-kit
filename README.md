@@ -27,13 +27,13 @@ This will install the starter pack in the 'node_modules' directory located in th
 
 If you want to include all the config variables from this repo, there's a handy single file you need to import into your main project Sass file:
 
-`@import 'node_modules/oleg-brand-kit/config';`
+`@import 'node_modules/@agepartnership/oleg-brand-kit/config';`
 
 ### Include the utility classes!
 
 If you want to include the utility classes from this repo, you can import the following into your main project Sass file:
 
-`@import 'node_modules/oleg-brand-kit/utilities';`
+`@import 'node_modules/@agepartnership/oleg-brand-kit/utilities';`
 
 This file contains classes which you can use to amend properties of an element, including font-weight, font-size and colour.
 
@@ -45,7 +45,7 @@ For more information regarding CSS specificity, see: https://css-tricks.com/spec
 
 You can include files individually allowing you to customise what is available to your project. For example, to include just the colour variables, you would drop the following into your main project Sass file:
 
-`@import 'node_modules/oleg-brand-kit/config.colour';`
+`@import 'node_modules/@agepartnership/oleg-brand-kit/config.colour';`
 
 ## Stylelint - linting your code
 
