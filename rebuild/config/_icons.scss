@@ -1,4 +1,41 @@
 .ap-icon {
+
+    //Icon Markup mixin
+    @mixin icon-markup($asset-url, $mask-enable: false) {
+        @if $mask-enable == true {
+            mask-image: url(#{$asset-url});
+            mask-position: center;
+            mask-repeat: no-repeat;
+            mask-size: contain;
+
+        } @else {
+            background-image: url(#{$asset-url});
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+    //Loop through all icons and create their CSS markup
+    @each $icon, $config in $icons {
+        &#{ $self }--#{$icon} {
+            @include icon-markup(map-get($config, 'asset'), false);
+
+            //If mask class is used, display the icon as an image mask
+            &.ap-icon--mask {
+                @include icon-markup(map-get($config, 'asset'), true);
+                background-image: none; //Disable background image as we're now using image mask
+            }
+        }
+    }
+
+    //Create icon sizes
+    @each $name, $size in $icon-sizes {
+        &#{ $self }--#{$name} {
+            height: #{$size};
+            width: #{$size};
+        }
+    }
     $self: &; // Notes: https: //css-tricks.com/using-sass-control-scope-bem-naming/
 
     //Icon sizes
@@ -392,41 +429,4 @@
             'asset': $brand-assets-dir + 'images/icons/pointer--primary.svg',
         )
     );
-
-    //Icon Markup mixin
-    @mixin icon-markup($asset-url, $mask-enable: false) {
-        @if $mask-enable == true {
-            mask-image: url(#{$asset-url});
-            mask-position: center;
-            mask-repeat: no-repeat;
-            mask-size: contain;
-
-        } @else {
-            background-image: url(#{$asset-url});
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-        }
-    }
-
-    //Loop through all icons and create their CSS markup
-    @each $icon, $config in $icons {
-        &#{ $self }--#{$icon} {
-            @include icon-markup(map-get($config, 'asset'), false);
-
-            //If mask class is used, display the icon as an image mask
-            &.ap-icon--mask {
-                background-image: none; //Disable background image as we're now using image mask
-                @include icon-markup(map-get($config, 'asset'), true);
-            }
-        }
-    }
-
-    //Create icon sizes
-    @each $name, $size in $icon-sizes {
-        &#{ $self }--#{$name} {
-            height: #{$size};
-            width: #{$size};
-        }
-    }
 }
