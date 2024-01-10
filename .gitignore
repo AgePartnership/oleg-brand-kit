@@ -1,6 +1,9 @@
 test.css
 test.css.map
+test-icons.css
+test-icons.css.map
 .sass-cache/
 index.html
 node_modules/
 package-lock.json
+.DS_Store

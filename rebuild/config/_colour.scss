@@ -1,0 +1,36 @@
+$blue-5: #f4f5f7;
+$blue-10: #e9eaef;
+$blue-20: #d3d6df;
+$blue-60: #7c83a0;
+$blue-90: #3a4570;
+$blue-100: #243060;
+$blue-dark: #202b56;
+
+$purple-5: #faf2f7;
+$purple-50: #cd80b3;
+$purple-100: #9c0067;
+$purple-dark: #850058;
+
+$grey: #242424;
+$light-grey: #ccc;
+$white: #fff;
+
+// Decoupled var names below here
+$primary-colour: $blue-100;
+$primary-colour--subtle: $blue-5;
+$primary-colour--tint: $blue-10;
+$primary-colour--light: $blue-20;
+$primary-colour--medium: $blue-60;
+$primary-colour--deep: $blue-90;
+$primary-colour--dark: $blue-dark;
+
+$secondary-colour: $purple-100;
+$secondary-colour--tint: $purple-5;
+$secondary-colour--medium: $purple-50;
+$secondary-colour--dark: $purple-dark;
+
+$text-colour: $grey;
+
+$error-colour: #df3a6b;
+$success-colour: #3adf90;
+

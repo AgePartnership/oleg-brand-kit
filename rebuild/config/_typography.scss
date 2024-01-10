@@ -1,0 +1,73 @@
+// Base font stack
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap'); // sass-lint:disable-line no-url-domains no-url-protocols
+@import url('https://use.typekit.net/kvh8avu.css'); // sass-lint:disable-line no-url-domains no-url-protocols
+$font--primary: 'Open Sans', Helvetica, Arial, 'Liberation Sans', sans-serif;
+$font--secondary: 'lemonde-courrier', 'Century Schoolbook', serif;
+
+// Base font weights
+$light: 300;
+$regular: 400;
+$semi-bold: 600;
+$bold: 700;
+
+// Base Line Height
+$line-height: 120%;
+
+// Initialise font use on the html element
+html {
+    font-family: $font--primary;
+    font-size: $base-unit * 2;
+    line-height: $line-height;
+}
+
+// Reset sup styles to override the reset in oleg-starter-pack
+sup {
+    font-size: smaller;
+    vertical-align: super;
+}
+
+// Font size mixins
+@mixin fsize-14 {
+    font-size: 0.875rem;
+    line-height: $line-height;
+}
+
+@mixin fsize-16 {
+    font-size: 1rem;
+    line-height: $line-height;
+}
+
+@mixin fsize-18 {
+    font-size: 1.125rem;
+    line-height: $line-height;
+}
+
+@mixin fsize-20 {
+    font-size: 1.25rem;
+    line-height: $line-height;
+}
+
+@mixin fsize-22 {
+    font-size: 1.375rem;
+    line-height: $line-height;
+}
+
+@mixin fsize-24 {
+    font-size: 1.5rem;
+    line-height: $line-height;
+}
+
+@mixin fsize-32 {
+    font-size: 2rem;
+    line-height: $line-height;
+}
+
+@mixin fsize-40 {
+    font-size: 2.5rem;
+    line-height: $line-height;
+}
+
+@mixin fsize-48 {
+    font-size: 3rem;
+    line-height: $line-height;
+}
