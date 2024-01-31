@@ -29,6 +29,7 @@
         "@agepartnership/ap-stylelint-config": "^2.0.1",
         "node-sass": "^6.0.0",
         "postcss": "^8.4.28",
-        "postcss-scss": "^4.0.7"
+        "postcss-scss": "^4.0.7",
+        "stylelint": "^16.2.0"
     }
 }
