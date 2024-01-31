@@ -390,6 +390,10 @@
         'pointer--primary': (
             //Use as: `<div class="ap-icon ap-icon--pointer--primary ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/pointer--primary.svg',
+        ),
+        'umbrella--primary': (
+            //Use as: `<div class="ap-icon ap-icon--umbrella--primary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/umbrella--primary.svg',
         )
     );
 
