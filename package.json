@@ -1,26 +1,34 @@
 {
-    "name": "oleg-brand-kit",
+    "name": "@agepartnership/oleg-brand-kit",
     "version": "3.9.2",
     "description": "A place to store global brand information for use across various digital properties (Sass colour variables, typography etc)",
     "license": "MIT",
     "author": "Sam Hardacre <me@nocturnalmonkey.com>",
     "main": "index.js",
-    "repository": "git@github.com:AgePartnership/oleg-brand-kit.git",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:AgePartnership/oleg-brand-kit.git"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    },
     "engines": {
         "node": ">=12.13.0"
     },
     "scripts": {
         "preversion": "git checkout develop",
         "postversion": "git push --tags origin develop && git checkout master && git pull --tags origin develop && git push --tags origin master && git checkout develop",
-        "stylelint": "stylelint --rd --rdd \"**/*.{css,scss,sass}\" -s scss",
-        "stylelint-fix": "stylelint --rd --rdd \"**/*.{css,scss,sass}\" -s scss --fix",
+        "lint:scss": "stylelint --rd --rdd \"**/*.{css,scss,sass}\" --custom-syntax postcss-scss",
+        "fix:scss": "stylelint --rd --rdd \"**/*.{css,scss,sass}\"  --custom-syntax postcss-scss --fix",
         "build": "node-sass --output-style compressed test.scss test.css"
     },
     "dependencies": {
         "oleg-starter-pack": "^2.3.3"
     },
     "devDependencies": {
-        "ap-stylelint-config": "github:agepartnership/ap-stylelint-config",
-        "node-sass": "^6.0.0"
+        "@agepartnership/ap-stylelint-config": "^2.1.1",
+        "node-sass": "^6.0.0",
+        "postcss": "^8.4.28",
+        "postcss-scss": "^4.0.7"
     }
 }
