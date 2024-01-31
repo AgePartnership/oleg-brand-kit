@@ -420,8 +420,8 @@
 
             //If mask class is used, display the icon as an image mask
             &.ap-icon--mask {
-                background-image: none; //Disable background image as we're now using image mask
                 @include icon-markup(map-get($config, 'asset'), true);
+                background-image: none; //Disable background image as we're now using image mask
             }
         }
     }
