@@ -43,8 +43,6 @@ sup {
 }
 
 @mixin fsize-24 {
-    font-size: 18px !important;
-    line-height: 26px !important;
 
     @include breakpoint(tablet-portrait-up) {
         font-size: 22px !important;
@@ -55,11 +53,12 @@ sup {
         font-size: 24px !important;
         line-height: 28px !important;
     }
+    
+    font-size: 18px !important;
+    line-height: 26px !important;
 }
 
 @mixin fsize-28 {
-    font-size: 22px !important;
-    line-height: 25px !important;
 
     @include breakpoint(tablet-portrait-up) {
         font-size: 26px !important;
@@ -70,11 +69,11 @@ sup {
         font-size: 28px !important;
         line-height: 31px !important;
     }
+    font-size: 22px !important;
+    line-height: 25px !important;
 }
 
 @mixin fsize-36 {
-    font-size: 22px !important;
-    line-height: 25px !important;
 
     @include breakpoint(tablet-portrait-up) {
         font-size: 30px !important;
@@ -85,11 +84,11 @@ sup {
         font-size: 36px !important;
         line-height: 40px !important;
     }
+    font-size: 22px !important;
+    line-height: 25px !important;
 }
 
 @mixin fsize-42 {
-    font-size: 22px !important;
-    line-height: 25px !important;
 
     @include breakpoint(tablet-portrait-up) {
         font-size: 36px !important;
@@ -100,4 +99,6 @@ sup {
         font-size: 42px !important;
         line-height: 46px !important;
     }
+    font-size: 22px !important;
+    line-height: 25px !important;
 }
