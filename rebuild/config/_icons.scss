@@ -397,7 +397,6 @@
         )
     );
 
-
     //Icon Markup mixin
     @mixin icon-markup($asset-url, $mask-enable: false) {
         @if $mask-enable == true {
