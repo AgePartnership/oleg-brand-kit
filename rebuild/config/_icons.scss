@@ -307,6 +307,10 @@
             //Use as: `<div class="ap-icon ap-icon--gavel--primary ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/gavel--primary.svg',
         ),
+        'gavel--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--gavel--primary-medium ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/gavel--primary-medium.svg',
+        ),
         'heart--primary': (
             //Use as: `<div class="ap-icon ap-icon--heart--primary ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/heart--primary.svg',
@@ -387,6 +391,10 @@
             //Use as: `<div class="ap-icon ap-icon--house-and-coins--primary ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/house-and-coins--primary.svg',
         ),
+        'house-and-coins--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--house-and-coins--primary-medium ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/house-and-coins--primary-medium.svg',
+        ),
         'pointer--primary': (
             //Use as: `<div class="ap-icon ap-icon--pointer--primary ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/pointer--primary.svg',
@@ -394,6 +402,10 @@
         'umbrella--primary': (
             //Use as: `<div class="ap-icon ap-icon--umbrella--primary ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/umbrella--primary.svg',
+        ),
+        'umbrella--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--umbrella--primary-medium ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/umbrella--primary-medium.svg',
         )
     );
 
