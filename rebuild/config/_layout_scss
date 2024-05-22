@@ -1,0 +1,2 @@
+// Sets max width for pages layouts
+$page-max-width: $big-desktop-lower;
