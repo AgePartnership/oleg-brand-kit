@@ -307,6 +307,10 @@
             //Use as: `<div class="ap-icon ap-icon--gavel--primary ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/gavel--primary.svg',
         ),
+        'gavel--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--gavel--primary-medium ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/gavel--primary-medium.svg',
+        ),
         'heart--primary': (
             //Use as: `<div class="ap-icon ap-icon--heart--primary ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/heart--primary.svg',
@@ -326,6 +330,10 @@
         'magnifying-glass--primary': (
             //Use as: `<div class="ap-icon ap-icon--magnifying-glass--primary ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/magnifying-glass--primary.svg',
+        ),
+        'magnifying-glass--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--magnifying-glass--primary-medium ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/magnifying-glass--primary-medium.svg',
         ),
         'megaphone--primary': (
             //Use as: `<div class="ap-icon ap-icon--megaphone--primary ap-icon--[size]"></div>`
@@ -387,9 +395,21 @@
             //Use as: `<div class="ap-icon ap-icon--house-and-coins--primary ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/house-and-coins--primary.svg',
         ),
+        'house-and-coins--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--house-and-coins--primary-medium ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/house-and-coins--primary-medium.svg',
+        ),
         'pointer--primary': (
             //Use as: `<div class="ap-icon ap-icon--pointer--primary ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/pointer--primary.svg',
+        ),
+        'umbrella--primary': (
+            //Use as: `<div class="ap-icon ap-icon--umbrella--primary ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/umbrella--primary.svg',
+        ),
+        'umbrella--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--umbrella--primary-medium ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/umbrella--primary-medium.svg',
         )
     );
 
@@ -416,8 +436,8 @@
 
             //If mask class is used, display the icon as an image mask
             &.ap-icon--mask {
-                background-image: none; //Disable background image as we're now using image mask
                 @include icon-markup(map-get($config, 'asset'), true);
+                background-image: none; //Disable background image as we're now using image mask
             }
         }
     }
