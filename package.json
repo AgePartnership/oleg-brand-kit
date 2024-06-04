@@ -20,15 +20,15 @@
         "postversion": "git push --tags origin develop && git checkout master && git pull --tags origin develop && git push --tags origin master && git checkout develop",
         "lint:scss": "stylelint --rd --rdd \"**/*.{css,scss,sass}\" --custom-syntax postcss-scss",
         "fix:scss": "stylelint --rd --rdd \"**/*.{css,scss,sass}\"  --custom-syntax postcss-scss --fix",
-        "build": "node-sass --output-style compressed test.scss test.css"
+        "build": "sass --style=compressed test.scss test.css"
     },
     "dependencies": {
         "@agepartnership/oleg-starter-pack": "^5.0.1"
     },
     "devDependencies": {
         "@agepartnership/ap-stylelint-config": "^2.1.1",
-        "node-sass": "^6.0.0",
         "postcss": "^8.4.28",
-        "postcss-scss": "^4.0.7"
+        "postcss-scss": "^4.0.7",
+        "sass": "^1.77.4"
     }
 }
