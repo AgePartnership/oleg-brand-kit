@@ -1,9 +1,8 @@
 $brand-assets-dir: '../assets/' !default;
+$page-max-width: $big-desktop-lower;
 
 @import 'config/base-unit';
 @import 'config/breakpoints';
 @import 'config/colour';
 @import 'config/typography';
 @import 'config/icons';
-
-$page-max-width: $big-desktop-lower;
