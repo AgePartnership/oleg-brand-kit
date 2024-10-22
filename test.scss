@@ -5,6 +5,7 @@
 // All errors must be fixed before a release is rolled out
 
 //Testing for Default
+$space: 16px; //Already included in `config/_config.space.scss`, but we can overwrite and use this value instead
 @import 'node_modules/@agepartnership/oleg-starter-pack/all';
 @import 'config';
 @import 'utilities';
