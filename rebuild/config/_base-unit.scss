@@ -1,2 +1,2 @@
-$base-unit: 8px;
-$space: $base-unit; // Used by legacy code such as oleg-starter-pack utilities
+$base-unit: 8px !default; // Default AP space variable
+$space: $base-unit; // Used by legacy code such as `oleg-starter-pack` utilities
