@@ -279,6 +279,10 @@
             //Use as: `<div class="ap-icon ap-icon--calendar--primary ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/calendar--primary.svg',
         ),
+        'calendar--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--calendar--primary-medium ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/calendar--primary-medium.svg',
+        ),
         'checkbox--primary': (
             //Use as: `<div class="ap-icon ap-icon--checkbox--primary ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/checkbox--primary.svg',
@@ -394,6 +398,10 @@
         'house--primary': (
             //Use as: `<div class="ap-icon ap-icon--house--primary ap-icon--[size]"></div>`
             'asset': $brand-assets-dir + 'images/icons/house--primary.svg',
+        ),
+        'house--primary-medium': (
+            //Use as: `<div class="ap-icon ap-icon--house--primary-medium ap-icon--[size]"></div>`
+            'asset': $brand-assets-dir + 'images/icons/house--primary-medium.svg',
         ),
         'house-and-coins--primary': (
             //Use as: `<div class="ap-icon ap-icon--house-and-coins--primary ap-icon--[size]"></div>`
